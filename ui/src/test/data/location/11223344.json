@@ -1,0 +1,66 @@
+{
+    "csid": "11223344",
+    "fields": {
+        "displayName": "MST:1:4B",
+        "termStatus": "accepted",
+        "name": "Shelf 4B",
+        "type": "shelf",
+        "address": "This is shelf's address.",
+        "securityNote": "This is shelf's security note.",
+        "accessNote": "This is shelf's access note.",
+        "conditionGroup": [
+            {
+                "_primary": false,
+                "conditionNote": "Secondary condition note",
+                "conditionNoteDate": "12-12-2001" 
+            },
+            {
+                "_primary": true,
+                "conditionNote": "Primary condition note",
+                "conditionNoteDate": "01-01-2001"
+            }
+        ],
+        "broaderContext": "urn:cspace:org.collectionspace.demo:personauthority:id(202514bf-18c2-48a2-922c):person:id(0db43bf2-533b-4a0b-9ea5)'MST:1'",
+        "equivalentContexts": [{
+            "equivalentContext": "MST:1:3B"
+        }, {
+            "equivalentContext": "MST:1:1B"
+        }, {
+            "equivalentContext": "MST:1:2B"
+        }, {
+            "equivalentContext": "MST:1:5B"
+        }, {
+            "equivalentContext": "MST:1:6B"
+        }],
+        "narrowerContexts": [
+            {
+                "_primary": false,
+                "narrowerContext": "MST:1:4B:1" 
+            },
+            {
+                "_primary": true,
+                "narrowerContext": "MST:1:4B:2" 
+            },
+            {
+                "_primary": false,
+                "narrowerContext": "MST:1:4B:3" 
+            }
+        ],
+        "relatedTerms": [
+            {
+                "_primary": false,
+                "relatedTerm": "MST:1:5B" 
+            },
+            {
+                "_primary": true,
+                "relatedTerm": "MST:1:6B:2" 
+            },
+            {
+                "_primary": false,
+                "relatedTerm": "MST:1:3B:3" 
+            }
+        ]
+    },
+    "termsUsed": [],
+    "relations": {}
+}

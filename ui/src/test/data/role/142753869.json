@@ -1,0 +1,14 @@
+{
+    "csid": "142753869",
+    "fields": {
+        "permissions": [
+            {"resourceName": "loanin", "permission": "read"},
+            {"resourceName": "loanout", "permission": "write"},
+            {"resourceName": "cataloging", "permission": "write"},
+            {"resourceName": "intake", "permission": "read"},
+            {"resourceName": "movement", "permission": "read"}
+        ],
+        "displayName": "Media Intern",
+        "description": "Interns responsible for working with media records"
+    }
+}

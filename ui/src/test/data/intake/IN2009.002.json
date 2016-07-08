@@ -1,0 +1,27 @@
+{
+    "csid": "IN2009.002",
+    "fields": {
+        "returnDate": "",
+        "depositor": "Duncan Jones",
+        "responsibleEntity": "Nathan Parker",
+        "packingNote": "",
+        "entryReason": "",
+        "entryNumber": "IN2009.002",
+        "entryNote": "This record has multiple entry methods.",
+        "numObjects": "1",
+        "description": "GERTY",
+        "entryDate": "",
+        "donor": "Sam Rockwell" 
+    },
+    "relations": {
+        
+    },
+    "termsUsed": [
+        {
+            "csid": "123.456.789",
+            "number": "Duncan Jones",
+            "sourceFieldName": "depositor",
+            "recordtype": "person" 
+        } 
+    ]
+}

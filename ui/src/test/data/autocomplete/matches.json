@@ -1,0 +1,80 @@
+[
+    {
+        "baseUrn": "urn:cspace:core.collectionspace.org:orgauthorities:name(organization):item:name(MayflowerPhotoplayCorp1334763694417)",
+        "csid": "539a1987-c985-46cb-9234",
+        "displayNames": [
+            "Mayflower Photoplay Corp."
+        ],
+        "type": "organization",
+        "namespace": "organization"
+    },
+    {
+        "baseUrn": "urn:cspace:core.collectionspace.org:orgauthorities:name(organization):item:name(OliverMoroscoPhotoplayCompany1334763683937)",
+        "csid": "fe7e0fd4-abeb-43df-a265",
+        "displayNames": [
+            "Oliver Morosco Photoplay Company"
+        ],
+        "type": "organization",
+        "namespace": "ulan_oa"
+    },
+    {
+        "baseUrn": "urn:cspace:core.collectionspace.org:orgauthorities:name(organization):item:name(Photoplay1334763775670)",
+        "csid": "312a0771-0d40-4653-9a31",
+        "displayNames": [
+            "Photoplay"
+        ],
+        "type": "organization",
+        "namespace": "ulan_oa"
+    },
+    {
+        "baseUrn": "urn:cspace:core.collectionspace.org:orgauthorities:name(organization):item:name(ToppsCompanyInc1334763749665)",
+        "csid": "bc831b9c-a9eb-4e4a-ab80",
+        "displayNames": [
+            "Topps Company, Inc."
+        ],
+        "type": "organization",
+        "namespace": "organization"
+    },
+    {
+        "baseUrn": "urn:cspace:core.collectionspace.org:orgauthorities:name(organization):item:name(UtopiaEnterprisesInc1334763691997)",
+        "csid": "14ecc869-d337-4f2a-a426",
+        "displayNames": [
+            "Utopia Enterprises, Inc."
+        ],
+        "type": "organization",
+        "namespace": "organization"
+    },
+    {
+        "baseUrn": "urn:cspace:core.collectionspace.org:personauthorities:name(person):item:name(ChristopherLee1334763571214)",
+        "csid": "3c238b1b-1163-471c-98e4",
+        "type": "person",
+        "namespace": "person",
+        "displayNames": [
+            "Christopher Lee",
+            "Chris Lee",
+            "C. Lee"
+        ]
+    },
+    {
+        "baseUrn": "urn:cspace:core.collectionspace.org:personauthorities:name(person):item:name(ChristopherLloyd1334763574730)",
+        "csid": "4caeedaa-a6d4-43d5-b17f",
+        "displayNames": [
+            "Christopher Lloyd"
+        ],
+        "type": "person",
+        "namespace": "ulan_pa"
+    },
+    {
+        "baseUrn": "urn:cspace:core.collectionspace.org:personauthorities:name(person):item:name(ChristopherPlummer1334763614341)",
+        "csid": "9c641934-5e59-4df7-a5ec",
+        "type": "person",
+        "namespace": "ulan_pa",
+        "displayNames": [
+            "Christopher Plummer",
+            "Chris Plummer",
+            "C. Plummer",
+            "Christopher P.",
+            "Chris P."
+        ]
+    }
+]

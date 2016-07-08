@@ -1,0 +1,29 @@
+#Login
+
+login-current: Welcome to the CollectionSpace Fine and Contemporary Art Demo
+login-current-info-4: fine and contemporary art profile
+login-current-info-5: of CollectionSpace, which includes fields and procedures useful for collections of fine and contemporary art. If you’re interested in a version of CollectionSpace configured to meet the needs of a different domain, please visit our
+login-login: admin@fcart.collectionspace.org
+login-rologin: reader@fcart.collectionspace.org
+
+# Fine and Contemporary Art Profile - Cataloging
+collection-object-objectNameLabel: Object/work type
+collection-object-responsibleDepartmentsLabel: Classification terms
+collection-object-responsibleDepartmentLabel: Classification term
+collection-object-referenceLabel: Source brief citation
+collection-object-titleLabel: Title text
+collection-object-contentConceptsLabel: General subject terms
+collection-object-dimensionSummaryLabel: Dimensions description
+collection-object-objectProductionDateGroupLabel: Creation date
+collection-object-objectProductionDateLabel: Creation date
+collection-object-objectProductionOrganizationLabel: Creator identity
+collection-object-objectProductionOrganizationRoleLabel: Creator role
+collection-object-objectProductionPersononLabel: Creator identity
+collection-object-objectProductionPersonRoleLabel: Creator role
+collection-object-objectProductionPeopleLabel: Creator identity
+collection-object-objectProductionPeopleRoleLabel: Creator role
+
+# Fine and Contemporary Art Profile - Concept
+preferredCA-termDisplayNameLabel: Generic concept term
+concept-scopeNoteLabel: Concept scope note
+concept-scopeNoteSourceLabel: Note source

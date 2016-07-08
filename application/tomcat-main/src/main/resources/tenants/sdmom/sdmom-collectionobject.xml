@@ -1,0 +1,569 @@
+<record id="collection-object" is-extension="true">
+
+  <services-record-path id="sdmom">collectionobjects_sdmom:http://collectionspace.org/services/collectionobject/local/sdmom,collectionobjects_sdmom</services-record-path>
+
+
+  <section id="identificationInformation">
+
+    <!-- Make appear in Advanced Search Screen -->
+    <!-- Create a new field for advanced search -->
+    <field id="computedCurrentLocationSearch" ui-search="repeatable" autocomplete="location-location" exists-in-services="false">
+    	<services-tag>computedCurrentLocation</services-tag>
+    </field>
+
+    <!-- Suppress from Advanced Search Screen -->
+    <repeat id="responsibleDepartments" has-primary="yes">
+      <field id="responsibleDepartment" ui-search="" mini="" />
+    </repeat>
+
+    <repeat id="sdmomOtherNumberList/sdmomOtherNumber" section="sdmom">
+      <field id="sdmomNumberValue" in-tab="yes" ui-search="repeatable" section="sdmom" />
+      <field id="sdmomNumberType" autocomplete="vocab-otherNumberType" ui-type="enum" section="sdmom" />
+      <field id="sdmomNumberNote" section="sdmom" />
+    </repeat>
+
+    <!-- Convert static vocabulary field to text field -->
+    <field id="collection" ui-search="repeatable" seperate_ui_container="false" autocomplete="concept-collection">
+      <selector>object-identification-collection</selector>
+      <options action="delete" />
+    </field>
+
+    <repeat id="objectStandingList/objectStandingGroup" section="sdmom">
+      <selector>object-identification-objectStandings</selector>
+      <field id="objectStanding" autocomplete="vocab-objectStanding" ui-type="enum" section="sdmom">
+        <selector>object-identification-object-standing</selector>
+      </field>
+      <field id="objectStandingBy" ui-search="repeatable" autocomplete="person-person,organization-organization" section="sdmom">
+        <selector>object-identification-object-standing-by</selector>
+      </field>
+      <field id="objectStandingDate" ui-type="date" datatype="date" ui-search="range" section="sdmom">
+        <selector>object-identification-object-standing-date</selector>
+      </field>
+      <field id="objectStandingNote" section="sdmom">
+        <selector>object-identification-object-standing-note</selector>
+      </field>
+    </repeat>
+
+    <repeat id="pastPerfectHistoryList/pastPerfectHistoryGroup" section="sdmom">
+      <selector>object-identification-past-perfect-history-group</selector>
+      <field id="pastPerfectHistoryBy" ui-readonly="true" autocomplete="person-person" section="sdmom">
+        <selector>object-identification-past-perfect-history-by</selector>
+      </field>
+      <field id="pastPerfectHistoryDate" ui-readonly="true" ui-type="date" datatype="date" ui-search="range" section="sdmom">
+        <selector>object-identification-past-perfect-history-date</selector>
+      </field>
+    </repeat>
+
+    <repeat id="collectionTypes" has-primary="yes" section="sdmom">
+      <field id="collectionType" autocomplete="vocab-collectionType" ui-type="enum" ui-search="repeatable" section="sdmom" />
+    </repeat>
+
+    <repeat id="controlledObjectNameList/controlledObjectNameGroup" section="sdmom">
+      <field id="controlledObjectName" autocomplete="concept-objectName" ui-search="repeatable" mini="search,list" section="sdmom">
+        <selector>object-identification-controlled-object-name</selector>
+      </field>
+      <field id="controlledObjectNameCurrency" autocomplete="vocab-nameCurrency" ui-type="enum" ui-search="repeatable" section="sdmom">
+        <selector>object-identification-controlled-object-name-currency</selector>
+      </field>
+      <field id="controlledObjectNameLevel" autocomplete="vocab-nameLevel" ui-type="enum" ui-search="repeatable" section="sdmom">
+        <selector>object-identification-controlled-object-name-level</selector>
+      </field>
+      <field id="controlledObjectNameNote" section="sdmom">
+        <selector>object-identification-controlled-object-name-note</selector>
+      </field>
+      <field id="controlledObjectNameSystem" seperate_ui_container="true" section="sdmom">
+        <selector>object-identification-controlled-object-name-system</selector>
+        <options>
+          <option id="">Please select a value</option>
+          <option id="art-and-architecture-thesaurus">Art &amp; Architecture Thesaurus</option>
+          <option id="nomenclature">Nomenclature</option>
+        </options>
+      </field>
+      <field id="controlledObjectNameLanguage" autocomplete="vocab-languages" ui-type="enum" ui-search="repeatable" section="sdmom">
+        <selector>object-identification-controlled-object-name-language</selector>
+        <enum>
+          <default>urn:cspace:core.collectionspace.org:vocabularies:name(languages):item:name(eng)'English'</default>
+          <blank-value>Please select a value</blank-value>
+        </enum>
+      </field>
+    </repeat>
+
+    <repeat id="otherObjectNameList/otherObjectNameGroup" section="sdmom">
+      <field id="otherObjectName" ui-search="repeatable" mini="search,list" section="sdmom">
+        <selector>object-identification-other-object-name</selector>
+      </field>
+      <field id="otherObjectNameNote" section="sdmom">
+        <selector>object-identification-other-object-name-note</selector>
+      </field>
+      <field id="otherObjectNameSystem" autocomplete="vocab-classificationSystem" ui-type="enum" section="sdmom">
+        <selector>object-identification-other-object-name-system</selector>
+        <enum>
+          <blank-value>Please select a value</blank-value>
+        </enum>
+      </field>
+      <field id="otherObjectNameLanguage" autocomplete="vocab-languages" ui-type="enum" section="sdmom">
+        <enum>
+          <default>urn:cspace:core.collectionspace.org:vocabularies:name(languages):item:name(eng)'English'</default>
+          <blank-value>Please select a value</blank-value>
+        </enum>
+        <selector>object-identification-other-object-name-language</selector>
+      </field>
+    </repeat>
+
+    <!-- Convert from static to dynamic term list. -->
+    <repeat id="titleGroupList/titleGroup">
+      <field id="titleType" autocomplete="vocab-titleType" ui-type="enum">
+        <selector>object-identification-object-title-type</selector>
+      </field>
+    </repeat>
+
+    <!-- Convert from static to dynamic term list. -->
+    <field id="recordStatus" autocomplete="vocab-recordStatus" ui-type="enum">
+      <selector>object-identification-record-status</selector>
+    </field>
+
+    <field id="catalogedBy" autocomplete="person-person" section="sdmom" />
+    <field id="catalogedDate" ui-type="date" datatype="date" ui-search="range" section="sdmom" />
+  </section>
+
+  <section id="descriptionInformation">
+    <field id="legacyPastPerfectDimensionDetails" section="sdmom" />
+    <field id="legacySearchTermsData" ui-search="repeatable" section="sdmom" />
+
+    <field id="copyNumber" ui-search="repeatable">
+      <selector>object-description-copy-number</selector>
+    </field>
+    <repeat id="objectStatusList" services-type-anonymous="false">
+      <!-- SDMoM-modified to use dynamic list -->
+      <field id="objectStatus" autocomplete="vocab-objectStatus" ui-type="enum" />
+    </repeat>
+
+    <!-- override options list -->
+    <field id="sex" ui-search="repeatable" seperate_ui_container="true">
+      <selector>object-description-sex</selector>
+      <options>
+        <option id="">Please select a value</option>
+        <option id="male">male</option>
+        <option id="female">female</option>
+        <option id="unknown">unknown</option>
+      </options>
+    </field>
+
+    <field id="phase" ui-search="repeatable" seperate_ui_container="true">
+      <selector>object-description-phase</selector>
+      <options>
+        <option id="">Please select a value</option>
+        <option id="adult">adult</option>
+        <option id="imago">imago</option>
+        <option id="larva">larva</option>
+        <option id="nymph">nymph</option>
+        <option id="pupa">pupa</option>
+      </options>
+    </field>
+    <repeat id="forms">
+      <field id="form" ui-search="repeatable" seperate_ui_container="true">
+        <selector>object-description-form</selector>
+        <options>
+          <option id="">Please select a value</option>
+          <option id="dry">dry</option>
+          <option id="pinned">pinned</option>
+          <option id="thin-section">thin section</option>
+          <option id="wet">wet</option>
+        </options>
+      </field>
+    </repeat>
+    <field id="editionNumber" ui-search="repeatable">
+      <selector>object-description-edition-number</selector>
+    </field>
+    <field id="age" ui-type="validated" datatype="integer">
+      <selector>object-description-age</selector>
+    </field>
+    <field id="ageQualifier" autocomplete="vocab-agequalifier" ui-type="enum">
+      <enum>
+        <blank-value>Please select a value</blank-value>
+      </enum>
+      <selector>object-description-age-qualifier</selector>
+    </field>
+    <field id="ageUnit" seperate_ui_container="true">
+      <selector>object-description-age-unit</selector>
+      <options>
+        <option id="">Please select a value</option>
+        <option id="days">Days</option>
+        <option id="months">Months</option>
+        <option id="weeks">Weeks</option>
+        <option id="years">Years</option>
+      </options>
+    </field>
+    <repeat id="styles">
+      <field id="style" ui-search="repeatable">
+        <selector>object-description-style</selector>
+      </field>
+    </repeat>
+    <repeat id="colors">
+      <field id="color">
+        <selector>object-description-color</selector>
+      </field>
+    </repeat>
+    <repeat id="materialGroupList/materialGroup">
+      <!-- selector>collection-object-materialGroup</selector -->
+      <field id="material" ui-search="repeatable" autocomplete="concept-material_ca">
+        <selector>object-description-material</selector>
+      </field>
+      <field id="materialComponent">
+        <selector>object-description-material-component</selector>
+      </field>
+      <field id="materialComponentNote">
+        <selector>object-description-material-component-note</selector>
+      </field>
+      <field id="materialName">
+        <selector>object-description-material-name</selector>
+      </field>
+      <!-- SDMoM-modified to use place authority -->
+      <field id="materialSource" ui-search="repeatable" autocomplete="place-place,place-bgn_place,place-nga_place">
+        <selector>object-description-material-source</selector>
+      </field>
+    </repeat>
+    <field id="physicalDescription">
+      <selector>object-description-physical-description</selector>
+    </field>
+    <repeat id="objectComponentGroupList/objectComponentGroup">
+      <!-- selector>collection-object-objectComponentGroup</selector -->
+      <field id="objectComponentName" ui-search="repeatable" seperate_ui_container="true">
+        <selector>object-description-object-component-name</selector>
+        <options>
+          <option id="">Please select a value</option>
+          <option id="blade">blade</option>
+          <option id="buttonhole">buttonhole</option>
+          <option id="handle">handle</option>
+          <option id="sleeve">sleeve</option>
+        </options>
+      </field>
+      <field id="objectComponentInformation">
+        <selector>object-description-object-component-information</selector>
+      </field>
+    </repeat>
+
+    <field id="dimension" ui-type="groupfield/dimension/selfrenderer" ui-func="cspace.dimension"/>
+
+    <repeat id="dimMeasuredPartGroupList/dimMeasuredPartGroup" section="sdmom">
+      <field id="dimMeasuredPart" autocomplete="vocab-measuredPart" ui-type="enum" section="sdmom" />
+      <field id="dimSummary" section="sdmom" />
+      <repeat id="dimSubGroupList/dimSubGroup" section="sdmom">
+        <field id="dim" autocomplete="vocab-dimension" ui-type="enum" section="sdmom" />
+        <field id="dimMeasurementUnit" autocomplete="vocab-measurementUnit" ui-type="enum" section="sdmom" />
+        <field id="dimValue" ui-type="validated" datatype="float" section="sdmom" />
+      </repeat>
+      <repeat id="avInformationSubList/avInformationSubGroup" section="sdmom">
+        <field id="technicalAttribute" autocomplete="vocab-technicalAttribute" ui-type="enum" ui-search="repeatable" section="sdmom" />
+        <field id="processTechnique" autocomplete="vocab-processTechnique" ui-type="enum" section="sdmom" />
+        <field id="filmFormat" autocomplete="vocab-filmFormat" ui-type="enum" section="sdmom" />
+        <field id="origCopy" autocomplete="vocab-origCopy" ui-type="enum" ui-search="repeatable" section="sdmom" />
+        <field id="color" autocomplete="vocab-color" ui-type="enum" section="sdmom" />
+        <field id="avNote" section="sdmom" />
+      </repeat>
+    </repeat>
+
+    <section id="contentInformation">
+      <field id="contentDescription">
+        <selector>object-description-content-description</selector>
+      </field>
+      <repeat id="contentLanguages">
+        <field id="contentLanguage" autocomplete="vocab-languages" ui-type="enum">
+          <enum>
+            <default>urn:cspace:core.collectionspace.org:vocabularies:name(languages):item:name(eng)'English'</default>
+            <blank-value>Please select a value</blank-value>
+          </enum>
+          <selector>object-description-content-language</selector>
+        </field>
+      </repeat>
+      <repeat id="contentActivities">
+        <field id="contentActivity" autocomplete="concept-activity">
+          <selector>object-description-content-activity</selector>
+        </field>
+      </repeat>
+      <repeat id="contentConcepts">
+        <field id="contentConcept" ui-search="repeatable" autocomplete="concept-concept,concept-material_ca">
+          <selector>object-description-content-concept</selector>
+        </field>
+      </repeat>
+      <field id="contentDate" ui-type="groupfield/structureddate"
+        primarykey="contentDate.dateDisplayDate" ui-func="cspace.structuredDate">
+        <services-tag>contentDateGroup</services-tag>
+        <selector>object-description-content-date</selector>
+      </field>
+      <repeat id="contentPositions">
+        <field id="contentPosition" seperate_ui_container="true">
+          <selector>object-description-content-position</selector>
+          <options>
+            <option id="">Please select a value</option>
+            <option id="back">back</option>
+            <option id="base">base</option>
+            <option id="bottom">bottom</option>
+            <option id="front">front</option>
+            <option id="inside">inside</option>
+            <option id="left">left</option>
+            <option id="outside">outside</option>
+            <option id="recto">recto</option>
+            <option id="right">right</option>
+            <option id="rim">rim</option>
+            <option id="top">top</option>
+            <option id="verso">verso</option>
+          </options>
+        </field>
+      </repeat>
+      <repeat id="contentObjectGroupList/contentObjectGroup">
+        <!-- selector>collection-object-contentObjectGroup</selector -->
+        <field id="contentObject">
+          <selector>object-description-content-object</selector>
+        </field>
+        <field id="contentObjectType" autocomplete="concept-objectName">
+          <selector>object-description-content-object-type</selector>
+        </field>
+      </repeat>
+      <repeat id="contentPeoples">
+        <field id="contentPeople" ui-search="repeatable" autocomplete="concept-culture_local,concept-culture_owc">
+          <selector>object-description-content-people</selector>
+        </field>
+      </repeat>
+      <repeat id="contentPersons">
+        <field id="contentPerson" autocomplete="person-person,person-ulan_pa">
+          <selector>object-description-content-person</selector>
+        </field>
+      </repeat>
+      <repeat id="contentPlaces">
+        <!-- SDMOM-modified to use place authority -->
+        <field id="contentPlace" ui-search="repeatable" autocomplete="place-site_place,place-place,place-bgn_place,place-nga_place" />
+      </repeat>
+      <repeat id="contentScripts">
+        <field id="contentScript" seperate_ui_container="true">
+          <selector>object-description-content-script</selector>
+          <options>
+            <option id="">Please select a value</option>
+            <option id="carolingian-miniscule">Carolingian miniscule</option>
+            <option id="gothic-script">Gothic script</option>
+            <option id="palmer-method">Palmer method</option>
+            <option id="roman-cursive">Roman cursive</option>
+            <option id="rustic-capitals">rustic capitals</option>
+            <option id="spencerian-method">Spencerian method</option>
+            <option id="square-capitals">square capitals</option>
+          </options>
+        </field>
+      </repeat>
+      <repeat id="contentOrganizations">
+        <field id="contentOrganization"
+          autocomplete="organization-organization,organization-ulan_oa">
+          <selector>object-description-content-organization</selector>
+        </field>
+      </repeat>
+      <repeat id="contentEventNameGroupList/contentEventNameGroup">
+        <!-- selector>csc-collection-object-contentEventNameGroup</selector -->
+        <!-- SDMoM-modified to use dynamic controlled list -->
+        <field id="contentEventName"  ui-search="repeatable" autocomplete="vocab-event" ui-type="enum" />
+        <field id="contentEventNameType">
+          <selector>object-description-content-event-name-type</selector>
+        </field>
+      </repeat>
+      <repeat id="contentOtherGroupList/contentOtherGroup">
+        <!-- selector>collection-object-contentObjectGroup</selector -->
+        <field id="contentOther">
+          <selector>object-description-content-other</selector>
+        </field>
+        <field id="contentOtherType">
+          <selector>object-description-content-other-type</selector>
+        </field>
+      </repeat>
+      <field id="contentNote">
+        <selector>object-description-content-note</selector>
+      </field>
+    </section>
+    <section id="textualInscriptionInformation">
+      <repeat id="textualInscriptionGroupList/textualInscriptionGroup">
+        <field id="inscriptionContent">
+          <selector>object-description-inscription-content</selector>
+        </field>
+        <field id="inscriptionContentInscriber"
+          autocomplete="person-person,organization-organization" ui-search="repeatable">
+          <selector>object-description-inscription-content-inscriber</selector>
+        </field>
+        <field id="inscriptionContentLanguage" autocomplete="vocab-languages" ui-type="enum">
+          <enum>
+            <default>urn:cspace:core.collectionspace.org:vocabularies:name(languages):item:name(eng)'English'</default>
+            <blank-value>Please select a value</blank-value>
+          </enum>
+          <selector>object-description-inscription-content-language</selector>
+        </field>
+        <group id="inscriptionContentDateGroup" ui-type="groupfield/structureddate"
+          primarykey="dateDisplayDate" ui-func="cspace.structuredDate">
+          <selector>object-description-inscription-content-date</selector>
+        </group>
+        <!-- SDMoM-modified to use dynamic vocabulary -->
+        <field id="inscriptionContentPosition" autocomplete="vocab-inscriptionPosition" ui-type="enum" />
+        <field id="inscriptionContentScript" seperate_ui_container="true">
+          <selector>object-description-inscription-content-script</selector>
+          <options>
+            <option id="">Please select a value</option>
+            <option id="carolingian-miniscule">Carolingian miniscule</option>
+            <option id="gothic-script">Gothic script</option>
+            <option id="palmer-method">Palmer method</option>
+            <option id="roman-cursive">Roman cursive</option>
+            <option id="rustic-capitals">rustic capitals</option>
+            <option id="spencerian-method">Spencerian method</option>
+            <option id="square-capitals">square capitals</option>
+          </options>
+        </field>
+        <!-- SDMoM-modified to use dynamic vocabulary -->
+        <field id="inscriptionContentType" autocomplete="vocab-inscriptionType" ui-type="enum" />
+        <!-- SDMoM-modified to use dynamic vocabulary -->
+        <field id="inscriptionContentMethod" autocomplete="vocab-inscriptionMethod" ui-type="enum" />
+        <field id="inscriptionContentInterpretation">
+          <selector>object-description-inscription-content-interpretation</selector>
+        </field>
+        <field id="inscriptionContentTranslation">
+          <selector>object-description-inscription-content-translation</selector>
+        </field>
+        <field id="inscriptionContentTransliteration">
+          <selector>object-description-inscription-content-transliteration</selector>
+        </field>
+      </repeat>
+    </section>
+    <section id="nonTextualInscriptionInformation">
+      <repeat id="nonTextualInscriptionGroupList/nonTextualInscriptionGroup">
+        <field id="inscriptionDescription">
+          <selector>object-description-inscription-description</selector>
+        </field>
+        <field id="inscriptionDescriptionInscriber" ui-search="repeatable"
+          autocomplete="person-person,organization-organization">
+          <selector>object-description-inscription-description-inscriber</selector>
+        </field>
+        <!-- CSPACE-4894: inscriptionDescriptionDateGroup isn't actually searchable, but need ui-search="range" to prevent uispec generation from erroring. -->
+        <group id="inscriptionDescriptionDateGroup" ui-type="groupfield/structureddate"
+          primarykey="dateDisplayDate" ui-func="cspace.structuredDate">
+          <selector>object-description-inscription-description-date</selector>
+        </group>
+        <field id="inscriptionDescriptionPosition" seperate_ui_container="true">
+          <selector>object-description-inscription-description-position</selector>
+          <options>
+            <option id="">Please select a value</option>
+            <option id="back">back</option>
+            <option id="base">base</option>
+            <option id="bottom">bottom</option>
+            <option id="front">front</option>
+            <option id="inside">inside</option>
+            <option id="left">left</option>
+            <option id="outside">outside</option>
+            <option id="recto">recto</option>
+            <option id="right">right</option>
+            <option id="rim">rim</option>
+            <option id="top">top</option>
+            <option id="verso">verso</option>
+          </options>
+        </field>
+        <field id="inscriptionDescriptionType" seperate_ui_container="true">
+          <selector>object-description-inscription-description-type</selector>
+          <options>
+            <option id="">Please select a value</option>
+            <option id="brand">brand</option>
+            <option id="decoration">decoration</option>
+            <option id="estate-stamp">estate stamp</option>
+            <option id="graffiti">graffiti</option>
+            <option id="label">label</option>
+            <option id="maker's-mark">maker's mark</option>
+          </options>
+        </field>
+        <field id="inscriptionDescriptionMethod" ui-search="repeatable">
+          <selector>object-description-inscription-description-method</selector>
+        </field>
+        <field id="inscriptionDescriptionInterpretation">
+          <selector>object-description-inscription-description-interpretation</selector>
+        </field>
+      </repeat>
+    </section>
+  </section>
+
+  <section id="objectProductionInformation">
+    <repeat id="techniqueGroupList/techniqueGroup">
+      <field id="technique" autocomplete="vocab-technique" ui-type="enum">
+        <selector>object-production-technique</selector>
+      </field>
+      <field id="techniqueType" autocomplete="vocab-techniqueType" ui-type="enum">
+        <selector>object-production-technique-type</selector>
+      </field>
+    </repeat>
+
+    <repeat id="objectProductionPlaceGroupList/objectProductionPlaceGroup">
+      <field id="objectProductionPlace" ui-search="repeatable" autocomplete="place-site_place,place-place,place-bgn_place,place-nga_place">
+        <selector>object-production-place</selector>
+      </field>
+      <field id="objectProductionPlaceRole"/>
+    </repeat>
+
+    <repeat id="objectProductionPeopleGroupList/objectProductionPeopleGroup">
+      <field id="objectProductionPeople" ui-search="repeatable" autocomplete="concept-culture_local,concept-culture_owc">
+        <selector>object-production-people</selector>
+      </field>
+      <field id="objectProductionPeopleRole"/>
+    </repeat>
+  </section>
+
+  <section id="objectHistoryAssociationInformation">
+    <repeat id="sdmomOwnerGroupList/sdmomOwnerGroup" section="sdmom">
+      <field id="sdmomOwner" autocomplete="person-person,organization-organization" ui-search="repeatable" section="sdmom" />
+      <field id="sdmomOwnerNote" section="sdmom" />
+    </repeat>
+    <section id="associationInformation">
+      <repeat id="assocActivityGroupList/assocActivityGroup">
+        <field id="assocActivity" autocomplete="concept-activity" ui-search="repeatable"/>
+      </repeat>
+
+      <!-- Convert assocPlace to authority look-up -->
+      <repeat id="assocPlaceGroupList/assocPlaceGroup">
+        <field id="assocPlace" ui-search="repeatable" autocomplete="place-place,place-bgn_place,place-nga_place"/>
+        <field id="assocPlaceType"/>
+        <field id="assocPlaceNote"/>
+      </repeat>
+
+      <!-- Convert assocCulturalContext to authority look-up -->
+      <repeat id="assocCulturalContextGroupList/assocCulturalContextGroup">
+        <field id="assocCulturalContext" ui-search="repeatable" autocomplete="concept-culture_local,concept-culture_owc"/>
+        <field id="assocCulturalContextType"/>
+        <field id="assocCulturalContextNote"/>
+      </repeat>
+
+      <!-- Convert to dynamic term list -->
+      <field id="assocEventName" ui-search="repeatable" autocomplete="vocab-event" ui-type="enum"/>
+
+    </section>
+  </section>
+
+  <section id="objectViewersContributionInformation">
+    <repeat id="viewersGroupList/viewersGroup" section="sdmom">
+      <field id="viewer" autocomplete="person-person,organization-organization" section="sdmom"/>
+      <field id="viewerNote" section="sdmom"/>
+      <field id="viewerRole" autocomplete="vocab-viewerRole" ui-type="enum" section="sdmom"/>
+      <field id="viewerDate" ui-type="date" datatype="date" ui-search="range" section="sdmom"/>
+      <field id="viewerCommentary" section="sdmom"/>
+    </repeat>
+  </section>
+
+  <section id="referenceInformation">
+    <repeat id="referenceRefGroupList/referenceRefGroup" section="sdmom">
+      <field id="referenceRef" autocomplete="citation-citation,citation-worldcat" section="sdmom"/>
+      <field id="referenceRefUse" autocomplete="vocab-referenceUse" ui-type="enum" section="sdmom" />
+      <field id="referenceRefNote" section="sdmom"/>
+    </repeat>
+    <field id="webReady" autocomplete="vocab-webReady" ui-type="enum" ui-search="repeatable" section="sdmom" />
+    <repeat id="copyrights" has-primary="yes" section="sdmom">
+      <field id="copyright" ui-search="repeatable" section="sdmom" />
+    </repeat>
+    <repeat id="credits" has-primary="yes" section="sdmom">
+      <field id="credit" section="sdmom" />
+    </repeat>
+  </section>
+
+  <section id="objectCollectionInformation">
+    <field id="fieldCollectionPlace" autocomplete="place-place,place-site_place,place-tgn_place" ui-type="enum"/>
+    <field id="fieldCollectionUnit" section="sdmom" />
+    <field id="fieldCollectionLevel" section="sdmom" />
+    <field id="fieldCollectionStratum" section="sdmom" />
+  </section>
+</record>

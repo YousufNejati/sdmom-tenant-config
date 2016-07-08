@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : service-config.xml
+    Created on : May 19, 2009, 1:31 PM
+    Author     :
+    Copyright 2009 University of California at Berkeley
+    Description:
+        Service layer configuration
+-->
+
+<svc:service-config  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+                     xmlns:svc='http://collectionspace.org/services/config'
+                     xmlns:types='http://collectionspace.org/services/config/types'
+                     xsi:schemaLocation='http://collectionspace.org/services/config ../resources/common.xsd'>
+
+	<cspace-instance-id>@CSPACE_INSTANCE_ID@</cspace-instance-id>
+	<db-csadmin-name>@DB_CSADMIN_NAME@</db-csadmin-name>
+	<db-nuxeo-name>@DB_NUXEO_NAME@</db-nuxeo-name>
+	<db-cspace-name>@DB_CSPACE_NAME@</db-cspace-name>
+	<use-app-generated-tenant-bindings>true</use-app-generated-tenant-bindings>
+    
+    <!-- name of the repository client is referred in each service binding -->
+    <repository-client name="nuxeo-java" default="true">
+        <!-- ip of network interface to which Nuxeo server is listening on -->
+        <host>127.0.0.1</host>
+        <port>62474</port> <!-- java -->
+        <!--port>8080</port--> <!-- rest -->
+        <user>Administrator</user>
+        <password>Administrator</password>
+        <client-type>java</client-type>
+        <client-class>org.collectionspace.services.nuxeo.client.java.RepositoryJavaClientImpl</client-class>
+        <properties>
+            <types:item><types:key>pageSizeDefault</types:key><types:value>40</types:value></types:item> <!-- Use 'pgSz' query param to override this on a per request bassis. -->
+            <types:item><types:key>pageSizeMax</types:key><types:value>2500</types:value></types:item> <!-- No list result page size can be greater than this amount -->
+            <types:item><types:key>refreshAuthZOnStartup</types:key><types:value>true</types:value></types:item>
+        </properties>
+    </repository-client>
+
+</svc:service-config>

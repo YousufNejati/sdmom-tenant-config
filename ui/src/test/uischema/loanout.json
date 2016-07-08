@@ -1,0 +1,103 @@
+{
+    "loanout": {
+        "properties": {
+            "termsUsed": {
+                "default": [],
+                "type": "array"
+            },
+            "relations": {
+                "default": {},
+                "type": "object"
+            },
+            "csid": {
+                "type": "string"
+            },
+            "fields": {
+                "properties": {
+                    "tenantID": {
+                        "type": "string"
+                    },
+                    "lendersAuthorizer": {
+                        "type": "string"
+                    },
+                    "borrower": {
+                        "type": "string"
+                    },
+                    "loanPurpose": {
+                        "default": "",
+                        "type": "string"
+                    },
+                    "loanOutDate": {
+                        "type": "date"
+                    },
+                    "loanStatusGroup": {
+                        "items": {
+                            "properties": {
+                                "_primary": {
+                                    "default": true,
+                                    "type": "boolean"
+                                },
+                                "loanStatusNote": {
+                                    "type": "string"
+                                },
+                                "loanStatus": {
+                                    "default": "",
+                                    "type": "string"
+                                },
+                                "loanStatusDate": {
+                                    "type": "date"
+                                }
+                            },
+                            "type": "object"
+                        },
+                        "type": "array"
+                    },
+                    "loanRenewalApplicationDate": {
+                        "type": "date"
+                    },
+                    "borrowersAuthorizer": {
+                        "type": "string"
+                    },
+                    "updatedBy": {
+                        "type": "string"
+                    },
+                    "updatedAt": {
+                        "type": "date"
+                    },
+                    "createdBy": {
+                        "type": "string"
+                    },
+                    "lendersContact": {
+                        "type": "string"
+                    },
+                    "createdAt": {
+                        "type": "string"
+                    },
+                    "loanReturnDate": {
+                        "type": "date"
+                    },
+                    "borrowersAuthorizationDate": {
+                        "type": "date"
+                    },
+                    "borrowersContact": {
+                        "type": "string"
+                    },
+                    "loanOutNote": {
+                        "type": "string"
+                    },
+                    "specialConditionsOfLoan": {
+                        "type": "string"
+                    },
+                    "lendersAuthorizationDate": {
+                        "type": "date"
+                    },
+                    "loanOutNumber": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            }
+        },
+        "type": "object"
+    }
+}

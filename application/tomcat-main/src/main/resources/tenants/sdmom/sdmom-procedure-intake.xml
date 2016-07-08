@@ -1,0 +1,21 @@
+<record id="intake" is-extension="true" type="record,procedure" generate-services-schema="true">
+
+  <services-record-path id="sdmom">intakes_sdmom:http://collectionspace.org/services/intake/local/sdmom,intakes_sdmom</services-record-path>
+
+  <section id="objectEntryInformation">
+    <!-- convert to dynamic controlled list -->
+    <field id="entryReason" ui-search="repeatable" autocomplete="vocab-entryReason" ui-type="enum"/>
+    <field id="ownersRequirements" section="sdmom"></field>
+    <field id="entryStatus" ui-search="repeatable" autocomplete="vocab-entryStatus" ui-type="enum" section="sdmom"/>
+  </section>
+
+  <section id="valuationInformation">
+    <field id="valuationCurrency" autocomplete="vocab-currency" ui-type="enum" section="sdmom">
+      <enum>
+        <default>urn:cspace:core.collectionspace.org:vocabularies:name(currency):item:name(USD)'US Dollar'</default>
+      </enum>
+    </field>
+    <field id="valuation" ui-type="validated" datatype="float" section="sdmom"/>
+  </section>
+
+</record>

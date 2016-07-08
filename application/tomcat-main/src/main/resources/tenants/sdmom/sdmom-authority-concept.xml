@@ -1,0 +1,46 @@
+<record id="concept">
+
+  <instances id="concept">
+    <!-- Copied from base -->
+    <instance id="concept-concept">
+      <web-url>concept</web-url>
+      <title-ref>concept</title-ref>
+      <title>Associated Concepts</title>
+    </instance>
+    <instance id="concept-material_ca">
+      <web-url>material_ca</web-url>
+      <title-ref>material_ca</title-ref>
+      <title>Material Concepts</title>
+    </instance>
+    <instance id="concept-activity">
+      <web-url>activity</web-url>
+      <title-ref>activity</title-ref>
+      <title>Activity Concepts</title>
+    </instance>
+
+    <!-- Added new -->
+    <instance id="concept-objectName">
+      <web-url>objectName</web-url>
+      <title-ref>objectName</title-ref>
+      <title>Object Name Concepts</title>
+    </instance>
+
+    <instance id="concept-culture_owc">
+      <web-url>culture_owc</web-url>
+      <title-ref>culture_owc</title-ref>
+      <title>Outline of World Cultures</title>
+    </instance>
+
+    <instance id="concept-culture_local">
+      <web-url>culture_local</web-url>
+      <title-ref>culture_local</title-ref>
+      <title>Local Cultures</title>
+    </instance>
+
+    <instance id="concept-collection">
+      <web-url>collection</web-url>
+      <title-ref>collection</title-ref>
+      <title>Collection</title>
+    </instance>
+  </instances>
+</record>

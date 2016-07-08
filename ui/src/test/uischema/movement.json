@@ -1,0 +1,124 @@
+{
+    "movement": {
+        "properties": {
+            "relations": {
+                "default": {},
+                "type": "object"
+            },
+            "termsUsed": {
+                "default": [],
+                "type": "array"
+            },
+            "csid": {
+                "type": "string"
+            },
+            "fields": {
+                "properties": {
+                    "frequencyForInventory": {
+                        "default": "",
+                        "type": "string"
+                    },
+                    "normalLocation": {
+                        "type": "string"
+                    },
+                    "tenantID": {
+                        "type": "string"
+                    },
+                    "movementReferenceNumber": {
+                        "type": "string"
+                    },
+                    "inventoryContactList": {
+                        "items": {
+                            "properties": {
+                                "_primary": {
+                                    "default": true,
+                                    "type": "boolean"
+                                },
+                                "inventoryContact": {
+                                    "type": "string"
+                                }
+                            },
+                            "type": "object"
+                        },
+                        "type": "array"
+                    },
+                    "inventoryNote": {
+                        "type": "string"
+                    },
+                    "inventoryDate": {
+                        "type": "date"
+                    },
+                    "movementMethods": {
+                        "items": {
+                            "properties": {
+                                "_primary": {
+                                    "default": true,
+                                    "type": "boolean"
+                                },
+                                "movementMethod": {
+                                    "default": "",
+                                    "type": "string"
+                                }
+                            },
+                            "type": "object"
+                        },
+                        "type": "array"
+                    },
+                    "workflow": {
+                        "type": "string"
+                    },
+                    "reasonForMove": {
+                        "default": "",
+                        "type": "string"
+                    },
+                    "updatedBy": {
+                        "type": "string"
+                    },
+                    "currentLocation": {
+                        "type": "string"
+                    },
+                    "updatedAt": {
+                        "type": "date"
+                    },
+                    "movementContact": {
+                        "type": "string"
+                    },
+                    "currentLocationFitness": {
+                        "default": "",
+                        "type": "string"
+                    },
+                    "createdBy": {
+                        "type": "string"
+                    },
+                    "nextInventoryDate": {
+                        "type": "date"
+                    },
+                    "createdAt": {
+                        "type": "string"
+                    },
+                    "removalDate": {
+                        "type": "date"
+                    },
+                    "plannedRemovalDate": {
+                        "type": "date"
+                    },
+                    "locationDate": {
+                        "type": "date"
+                    },
+                    "inventoryActionRequired": {
+                        "default": "",
+                        "type": "string"
+                    },
+                    "movementNote": {
+                        "type": "string"
+                    },
+                    "currentLocationNote": {
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            }
+        },
+        "type": "object"
+    }
+}

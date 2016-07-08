@@ -1,0 +1,107 @@
+{"acquisition": {
+    "properties": {
+        "objectPurchasePriceValueStart": {"type": "string"},
+        "acquisitionSources": {
+            "items": {
+                "properties": {
+                    "_primary": {
+                        "default": true,
+                        "type": "boolean"
+                    },
+                    "acquisitionSource": {"type": "string"}
+                },
+                "type": "object"
+            },
+            "type": "array"
+        },
+        "acquisitionDateGroupStart": {"type": "string"},
+        "objectPurchasePriceValueEnd": {"type": "string"},
+        "updatedAtEnd": {"type": "date"},
+        "acquisitionFunding": {
+            "items": {
+                "properties": {
+                    "_primary": {
+                        "default": true,
+                        "type": "boolean"
+                    },
+                    "acquisitionFundingSource": {"type": "string"}
+                },
+                "type": "object"
+            },
+            "type": "array"
+        },
+        "acquisitionReferenceNumbers": {
+            "items": {
+                "properties": {
+                    "acquisitionReferenceNumber": {"type": "string"},
+                    "_primary": {
+                        "default": true,
+                        "type": "boolean"
+                    }
+                },
+                "type": "object"
+            },
+            "type": "array"
+        },
+        "updatedAtStart": {"type": "date"},
+        "accessionDateGroupStart": {"type": "string"},
+        "creditLines": {
+            "items": {
+                "properties": {
+                    "_primary": {
+                        "default": true,
+                        "type": "boolean"
+                    },
+                    "creditLine": {"type": "string"}
+                },
+                "type": "object"
+            },
+            "type": "array"
+        },
+        "acquisitionMethods": {
+            "items": {
+                "properties": {
+                    "_primary": {
+                        "default": true,
+                        "type": "boolean"
+                    },
+                    "acquisitionMethod": {
+                        "default": "",
+                        "type": "string"
+                    }
+                },
+                "type": "object"
+            },
+            "type": "array"
+        },
+        "accessionDateGroupEnd": {"type": "string"},
+        "updatedBys": {
+            "items": {
+                "properties": {
+                    "_primary": {
+                        "default": true,
+                        "type": "boolean"
+                    },
+                    "updatedBy": {"type": "string"}
+                },
+                "type": "object"
+            },
+            "type": "array"
+        },
+        "fieldCollectionEventNames": {
+            "items": {
+                "properties": {
+                    "fieldCollectionEventName": {"type": "string"},
+                    "_primary": {
+                        "default": true,
+                        "type": "boolean"
+                    }
+                },
+                "type": "object"
+            },
+            "type": "array"
+        },
+        "acquisitionDateGroupEnd": {"type": "string"}
+    },
+    "type": "object"
+}}

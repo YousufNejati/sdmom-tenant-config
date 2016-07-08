@@ -1,0 +1,229 @@
+#Login
+login-current: San Diego Museum of Man
+login-current-info: Welcome to the Museum of Man CollectionSpace system
+login-current-details:
+
+preferredPA-foreNameLabel: First Name
+preferredPA-middleNameLabel: Middle Name
+preferredPA-surNameLabel: Last Name
+
+# Exhibition
+exhibition-requiredStaffSecurityLabel: Required Staff and Security
+
+# Intake
+intake-ownersRequirementsLabel: Current owner's requirements
+intake-entryStatusLabel: Status
+intake-valuationLabel: Valuation
+intake-valuationCurrencyLabel: Valuation Currency
+
+# Location, Movement and Inventory
+movement-normalLocationLabel: Home Location
+movement-movementContactLabel: Moved By
+movement-approvedByLabel: Approved By
+movement-inventoryContactLabel: Inventoried By
+
+# Location authority
+location-locationTypeLabel: Location Type
+location-addressLabel: Location Address
+
+# Media
+media-sourceLabel: Related Resource
+media-hiresLocationLabel: High Resolution Location
+
+# Object Exit
+objectexit-objectExitTitleLabel: Exit Event Title
+objectexit-deaccessionApprovalInformationLabel: Deaccession Approval Information
+objectexit-collectionsReviewCommitteeLabel: Approved by Collection Review Committee
+objectexit-collectionsReviewCommitteeStatusLabel: Approval Status
+objectexit-collectionsReviewCommitteeDateLabel: Date Approved
+objectexit-collectionsCommitteeLabel: Approved by Collection Committee
+objectexit-collectionsCommitteeStatusLabel: Approval Status
+objectexit-collectionsCommitteeDateLabel: Date Approved
+objectexit-executiveCommitteeLabel: Approved by Executive Committee
+objectexit-executiveCommitteeStatusLabel: Approval Status
+objectexit-executiveCommitteeDateLabel: Date Approved
+objectexit-boardOfTrusteesLabel: Approved by Board of Trustees
+objectexit-boardOfTrusteesStatusLabel: Approval Status
+objectexit-boardOfTrusteesDateLabel: Date Approved
+objectexit-deaccessionNoteLabel: Notes
+
+# Acquisition
+acquisition-acquisitionReferenceNumberLabel: Accsession Number
+acquisition-acquisitionProvenanceLabel: Acquisition Provenance
+acquisition-acquisitionRestrictionsLabel: Acquisition Restrictions
+acquisition-ownersLabel: Acquisition Source
+acquisition-acquisitionSourceLabel: Contact
+
+# Loan Out
+loanout-loanRenewalApplicationDateLabel: Loan Renewal Date
+
+# Loan In
+loanin-loanInConditionsLabel: Loan Restrictions
+loanin-loanRenewalApplicationDateLabel: Loan Renewal Date
+
+# Organization
+preferredOA-termDisplayNameLabel: Display Name
+preferredOA-termNameLabel: Organization Nickname
+preferredOA-additionsToNameLabel: Organization Notes
+preferredOA-mainBodyNameLabel: Organization Name
+
+# Concept
+vocab-objectName: Object Name Concepts
+vocab-culture_owc: Outline of World Cultures
+vocab-culture_local: Local Culture
+preferredCA-termSourceLabel: Citation Source
+vocab-collection: Collection
+
+# Place
+vocab-bgn_place: U.S. Board on Geographic Names
+vocab-nga_place: U.S. National Geospatial-Intelligence Agency
+vocab-site_place: Site
+preferredPlace-termNameLabel: Place Name
+preferredPlace-termSourceLabel: Citation Source
+
+# Citation
+preferredCI-termTypeLabel: Citation Type
+preferredCI-termStatusLabel: Type Status
+preferredCI-termSourceNoteLabel: Language Note
+
+# Condition Check
+conditioncheck-conditionStatusGroupLabel: Status
+conditioncheck-statusLabel: Status
+conditioncheck-statusDateLabel: Status Date
+conditioncheck-statusNoteLabel: Status Note
+
+conditioncheck-treatmentEstimateGroupLabel: Treatment Estimate
+conditioncheck-workAssessmentCompletedByLabel: Work Estimate Completed By
+conditioncheck-estimatedTreatmentCostLabel: Estimated Treatment Cost
+conditioncheck-estimatedCompletionDateLabel: Estimated Completion Date
+
+conditioncheck-workCompletedGroupLabel: Work Completed
+conditioncheck-workCompletedByLabel: Work Completed By
+conditioncheck-workCompletedLabel: Work Completed
+conditioncheck-workCompletedDateLabel: Work Completed Date
+
+conditioncheck-conditionAssessmentGroupLabel: Assessment
+conditioncheck-conditionAssessmentTermLabel: Assessment Detail
+conditioncheck-conditionAssessmentPartLabel: Assessed Term
+conditioncheck-conditionAssessmentCommentLabel: Assessment Comment
+conditioncheck-conditionChkerLabel: Condition Checker/Assessor
+
+# Cataloging / Object
+collection-object-computedCurrentLocationSearchLabel: Computed Current Location
+collection-object-sdmomOtherNumberListLabel: Other Number
+collection-object-sdmomNumberValueLabel: Other number
+collection-object-sdmomNumberTypeLabel: Type
+collection-object-sdmomNumberNoteLabel: Note
+
+collection-object-numberNoteLabel: Number Note
+collection-object-collectionTypeLabel: Collection Type
+
+collection-object-objectStandingsLabel: Object Standing
+collection-object-objectStandingGroupLabel: Object Standing
+collection-object-objectStandingLabel: Standing
+collection-object-objectStandingDateLabel: Date
+collection-object-objectStandingByLabel: By
+collection-object-objectStandingNoteLabel: Note
+
+collection-object-catalogedByLabel: Cataloged By
+collection-object-catalogedDateLabel: Cataloged Date
+
+collection-object-briefDescriptionsLabel: Description
+
+collection-object-controlledObjectNameGroupLabel: Controlled Object Name
+collection-object-controlledObjectNameLabel: Controlled Object Name
+collection-object-controlledObjectNameCurrencyLabel: Object Name Currency
+collection-object-controlledObjectNameLevelLabel: Object Name Level
+collection-object-controlledObjectNameNoteLabel: Object Name Note
+collection-object-controlledObjectNameSystemLabel: Object Name System
+collection-object-controlledObjectNameLanguageLabel: Object Name Language
+collection-object-otherObjectNameGroupLabel: Other Object Name
+collection-object-otherObjectNameLabel: Object Name
+collection-object-otherObjectNameNoteLabel: Note
+collection-object-otherObjectNameSystemLabel: System
+collection-object-otherObjectNameLanguageLabel: Language
+
+collection-object-objectStatusLabel: Object Authenticity
+collection-object-contentObjectLabel: SDMoM Object Contained
+collection-object-contentPeoplesLabel: Culture
+collection-object-legacySearchTermsDataLabel: Legacy Search Terms Data
+
+collection-object-dimMeasuredPartGroupLabel: Dimensions
+collection-object-dimPartVersionLabel: Part/Version
+collection-object-dimMeasuredPartLabel: Component Name
+collection-object-dimSummaryLabel: Information
+collection-object-dimSubGroupLabel: Measurements
+collection-object-dimLabel: Dimension
+collection-object-dimValueLabel: Value
+collection-object-dimMeasurementUnitLabel: Dimension Unit
+dimMeasuredPartGroup-avInformationSubGroupLabel: Audio/Visual Information
+collection-object-technicalAttributeLabel: Medium
+collection-object-processTechniqueLabel: Process/Technique
+collection-object-filmFormatLabel: Film Format
+collection-object-origCopyLabel: Orig/Copy
+collection-object-colorLabel: Color
+collection-object-avNoteLabel: Note
+collection-object-legacyPastPerfectDimensionDetailsLabel: Legacy Past Perfect Dimension Details
+collection-object-textualInscriptionInformationLabel: Inscription
+
+collection-object-contentEventNameGroupLabel: Event
+collection-object-contentConceptsLabel: Content - Search Terms
+collection-object-contentPersonsLabel: Content - Person
+collection-object-contentPeoplesLabel: Content - Culture
+collection-object-contentPlacesLabel: Content - Place
+collection-object-contentOrganizationsLabel: Content - Organization
+collection-object-contentDateLabel: Content - Date
+
+collection-object-assocActivityGroupLabel: Associated Search Terms
+collection-object-assocActivityLabel: Associated Search Term
+collection-object-assocActivityNoteLabel: Associated Search Term Note
+
+collection-object-objectProductionPeopleGroupLabel: Production Culture
+collection-object-objectProductionPeopleLabel: Production Culture
+
+collection-object-objectHistoryNote-label: Provenance
+collection-object-sdmomOwnerGroupLabel: Owners
+collection-object-sdmomOwnerLabel: Owner
+collection-object-sdmomOwnerNoteLabel: Owner's Note
+
+collection-object-objectViewersContributionInformationLabel: Commentary
+collection-object-viewersGroupLabel: Commentor
+collection-object-viewerLabel: Commentor Name
+collection-object-viewerNoteLabel: Commentor Note
+collection-object-viewerRoleLabel: Commentor Role
+collection-object-viewerDateLabel: Commentor Date
+collection-object-viewerCommentaryLabel: Commentary
+
+collection-object-referenceRefGroupLabel: Reference Information
+collection-object-referenceRefLabel: Reference
+collection-object-referenceRefUseLabel: Reference Use
+collection-object-referenceRefNoteLabel: Reference Note
+collection-object-copyrightsLabel: Copyrights
+collection-object-copyrightLabel: Copyright
+collection-object-creditsLabel: Label Credits
+collection-object-creditLabel: Label Credit
+collection-object-webReadyLabel: Web Ready?
+
+collection-object-fieldCollectionUnitLabel: Field Collection Unit
+collection-object-fieldCollectionLevelLabel: Field Collection Level
+collection-object-fieldCollectionStratumLabel: Field Collection Stratum
+
+#  Anthro Extension
+collection-object-repatriationNagpraComplianceInformationLabel: Registration and NAGPRA Compliance Information
+collection-object-nagpraInventoryGroupLabel: NAGPRA Inventory Available
+collection-object-nagpraInventoryAvailableLabel: NAGPRA Inventory Available
+collection-object-nagpraInventoryAvailableDateLabel: NAGPRA Inventory Available Date
+collection-object-nagpraStatusLabel: NAGPRA Status
+collection-object-nagpraCategoryDeterminationRepeatLabel: NAGPRA Category Determination
+collection-object-repatriationNotesRepeatLabel: Repatriation Notes
+collection-object-nagpraCulturalDeterminationRepeatLabel: NAGPRA Cultural Determination
+
+collection-object-culturalCareInformationLabel: Cultural Care Information
+collection-object-culturalCareNotesLabel: Cultural Care Notes
+collection-object-accessLimitationsGroupLabel: Access Limitations
+collection-object-accessLimitationTypeLabel: Access Limitation Type
+collection-object-accessLimitationLevelLabel: Access Limitation Label
+collection-object-accessLimitationDetailsLabel: Access Limitation Details
+collection-object-accessLimitationRequestorLabel: Access Limitation Requestor
+collection-object-accessLimitationOrganizationLabel: Access Limitation Organization
+collection-object-accessLimitationDateLabel: Access Limitation Date

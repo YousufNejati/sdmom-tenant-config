@@ -1,0 +1,239 @@
+{
+  "taxon": {
+    "properties": {
+      "csid": {
+        "type": "string"
+      }, 
+      "fields": {
+        "properties": {
+          "broaderContext": {
+            "type": "string"
+          }, 
+          "broaderContextType": {
+            "default": "", 
+            "type": "string"
+          }, 
+          "commonNameGroup": {
+            "items": {
+              "properties": {
+                "_primary": {
+                  "default": true, 
+                  "type": "boolean"
+                }, 
+                "commonName": {
+                  "type": "string"
+                }, 
+                "commonNameLanguage": {
+                  "default": "", 
+                  "type": "string"
+                }, 
+                "commonNameSource": {
+                  "type": "string"
+                }, 
+                "commonNameSourceDetail": {
+                  "type": "string"
+                }
+              }, 
+              "type": "object"
+            }, 
+            "type": "array"
+          }, 
+          "createdAt": {
+            "type": "string"
+          }, 
+          "createdBy": {
+            "type": "string"
+          }, 
+          "csid": {
+            "type": "string"
+          }, 
+          "equivalentContexts": {
+            "items": {
+              "properties": {
+                "_primary": {
+                  "default": true, 
+                  "type": "boolean"
+                }, 
+                "equivalentContext": {
+                  "type": "string"
+                }
+              }, 
+              "type": "object"
+            }, 
+            "type": "array"
+          }, 
+          "narrowerContexts": {
+            "items": {
+              "properties": {
+                "_primary": {
+                  "default": true, 
+                  "type": "boolean"
+                }, 
+                "narrowerContext": {
+                  "type": "string"
+                }, 
+                "narrowerContextType": {
+                  "default": "", 
+                  "type": "string"
+                }
+              }, 
+              "type": "object"
+            }, 
+            "type": "array"
+          }, 
+          "refName": {
+            "type": "string"
+          }, 
+          "relatedTerms": {
+            "items": {
+              "properties": {
+                "_primary": {
+                  "default": true, 
+                  "type": "boolean"
+                }, 
+                "relatedTerm": {
+                  "type": "string"
+                }
+              }, 
+              "type": "object"
+            }, 
+            "type": "array"
+          }, 
+          "shortIdentifier": {
+            "type": "string"
+          }, 
+          "taxonAuthorGroup": {
+            "items": {
+              "properties": {
+                "_primary": {
+                  "default": true, 
+                  "type": "boolean"
+                }, 
+                "taxonAuthor": {
+                  "type": "string"
+                }, 
+                "taxonAuthorType": {
+                  "default": "", 
+                  "type": "string"
+                }
+              }, 
+              "type": "object"
+            }, 
+            "type": "array"
+          }, 
+          "taxonCitationList": {
+            "items": {
+              "properties": {
+                "_primary": {
+                  "default": true, 
+                  "type": "boolean"
+                }, 
+                "taxonCitation": {
+                  "type": "string"
+                }
+              }, 
+              "type": "object"
+            }, 
+            "type": "array"
+          }, 
+          "taxonCurrency": {
+            "default": "", 
+            "type": "string"
+          }, 
+          "taxonIsNamedHybrid": {
+            "default": false, 
+            "type": "boolean"
+          }, 
+          "taxonNote": {
+            "type": "string"
+          }, 
+          "taxonRank": {
+            "default": "", 
+            "type": "string"
+          }, 
+          "taxonTermGroup": {
+            "items": {
+              "properties": {
+                "_primary": {
+                  "default": true, 
+                  "type": "boolean"
+                }, 
+                "taxonomicStatus": {
+                  "default": "", 
+                  "type": "string"
+                }, 
+                "termDisplayName": {
+                  "type": "string"
+                }, 
+                "termLanguage": {
+                  "default": "", 
+                  "type": "string"
+                }, 
+                "termName": {
+                  "type": "string"
+                }, 
+                "termPrefForLang": {
+                  "default": false, 
+                  "type": "boolean"
+                }, 
+                "termQualifier": {
+                  "type": "string"
+                }, 
+                "termSource": {
+                  "type": "string"
+                }, 
+                "termSourceDetail": {
+                  "type": "string"
+                }, 
+                "termSourceID": {
+                  "type": "string"
+                }, 
+                "termSourceNote": {
+                  "type": "string"
+                }, 
+                "termFormattedDisplayName": {
+                  "type": "string"
+                }, 
+                "termStatus": {
+                  "default": "provisional", 
+                  "type": "string"
+                }, 
+                "termType": {
+                  "default": "", 
+                  "type": "string"
+                }
+              }, 
+              "type": "object"
+            }, 
+            "type": "array"
+          }, 
+          "taxonYear": {
+            "type": "string"
+          }, 
+          "tenantID": {
+            "type": "string"
+          }, 
+          "updatedAt": {
+            "type": "date"
+          }, 
+          "updatedBy": {
+            "type": "string"
+          }, 
+          "uri": {
+            "type": "string"
+          }
+        }, 
+        "type": "object"
+      }, 
+      "relations": {
+        "default": {}, 
+        "type": "object"
+      }, 
+      "termsUsed": {
+        "default": [], 
+        "type": "array"
+      }
+    }, 
+    "type": "object"
+  }
+}

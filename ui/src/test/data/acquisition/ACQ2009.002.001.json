@@ -1,0 +1,37 @@
+{
+    "csid": "61807957-3001-481c-a697",
+    "fields": {
+        "acquisitionFunding": [],
+        "groupPurchasePriceValue": "100",
+        "groupPurchasePriceCurrency": "usdollar",
+        "acquisitionReferenceNumber": "ACQ2009.2",
+        "acquisitionReason": "The museum likes it",
+        "acquisitionNote": "Some info about this acquisition",
+        "objectOfferPriceValue": "222",
+        "objectOfferPriceCurrency": "poundsterling",
+        "objectPurchaseOfferPriceCurrency": "euro",
+        "objectPurchaseOfferPriceValue": "145",
+        "objectPurchasePriceCurrency": "usdollar",
+        "objectPurchasePriceValue": "230",
+        "originalObjectPurchasePriceCurrency": "euro",
+        "originalObjectPurchasePriceValue": "500",
+        "accessionDate": "Aug 11, 2010",
+        "acquisitionProvisos": "A curator must say hello to it every day",
+        "acquisitionDates": [],
+        "acquisitionMethod": "treasure",
+        "owners": [{
+           "owner": "Some owner",
+           "_primary": true
+        }, {
+           "owner": "Co-owner",
+           "_primary": false
+        }],
+        "transferOfTitleNumber": "1-2-3-4",
+        "fieldCollectionEventNames": [{
+            "fieldCollectionEventName": "Some event name",
+            "_primary": true
+        }]
+    },
+    "relations": {},
+    "termsUsed": []
+}

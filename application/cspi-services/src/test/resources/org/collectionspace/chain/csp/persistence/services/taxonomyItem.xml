@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<ns2:taxon_common xmlns:ns2="http://collectionspace.org/services/taxonomy"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <taxonYear>1832</taxonYear>
+    <taxonCurrency>current</taxonCurrency>
+    <shortIdentifier>CentauruspleurexanthemusGreen1832</shortIdentifier>
+    <taxonCitationList>
+        <taxonCitation>A Monograph of the Trilobites of North America</taxonCitation>
+    </taxonCitationList>
+    <taxonIsNamedHybrid>false</taxonIsNamedHybrid>
+    <taxonAuthorGroupList>
+        <taxonAuthorGroup>
+            <taxonAuthor>J. Green</taxonAuthor>
+            <taxonAuthorType>ascribed</taxonAuthorType>
+        </taxonAuthorGroup>
+    </taxonAuthorGroupList>
+    <taxonRank>species</taxonRank>
+    <taxonTermGroupList>
+        <taxonTermGroup>
+            <termDisplayName>Centaurus pleurexanthemus Green 1832</termDisplayName>
+            <termStatus>accepted</termStatus>
+            <taxonomicStatus>valid</taxonomicStatus>
+        </taxonTermGroup>
+    </taxonTermGroupList>
+</ns2:taxon_common>

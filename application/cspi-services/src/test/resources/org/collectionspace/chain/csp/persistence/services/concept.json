@@ -1,0 +1,20 @@
+{
+  "shortIdentifier": "concepttest1",
+  "citationGroup": [{
+    "_primary": true,
+    "citationSource": "source"
+  }],
+  "conceptTermGroup": [{
+    "_primary": true,
+    "termDisplayName": "Concept Test 1 (Qualified)",
+    "termQualifier": "Qualifier",
+    "termType": "Type",
+    "termStatus": "termStatus",
+    "termLanguage": "English",
+    "termPrefForLang": true
+  }],
+  "additionalSourceGroup": [{
+    "_primary": true,
+    "additionalSource": "source"
+  }]
+}

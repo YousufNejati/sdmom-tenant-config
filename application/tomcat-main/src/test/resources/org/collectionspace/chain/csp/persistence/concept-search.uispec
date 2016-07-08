@@ -1,0 +1,87 @@
+{
+    ".csc-concept-termSourceDetail-label": {"messagekey": "preferredCA-termSourceDetailLabel"},
+    ".csc-concept-updatedAtEnd": {
+        "decorators": [{
+            "func": "cspace.datePicker",
+            "type": "fluid"
+        }],
+        "value": "${updatedAtEnd}"
+    },
+    ".csc-concept-historicalStatus-label": {"messagekey": "preferredCA-historicalStatusLabel"},
+    ".csc-concept-termName-label": {"messagekey": "preferredCA-termNameLabel"},
+    ".csc-concept-updatedBy": {"decorators": [{
+        "func": "cspace.makeRepeatable",
+        "type": "fluid",
+        "options": {
+            "repeatTree": {"expander": {
+                "tree": {".csc-concept-updatedBy": "${{row}.updatedBy}"},
+                "type": "fluid.noexpand"
+            }},
+            "elPath": "updatedBys",
+            "hidePrimary": true
+        }
+    }]},
+    ".csc-concept-termSource-label": {"messagekey": "preferredCA-termSourceLabel"},
+    ".csc-concept-updatedAtEnd-label": {"messagekey": "concept-updatedAtEndLabel"},
+    ".csc-concept-termType-label": {"messagekey": "preferredCA-termTypeLabel"},
+    ".csc-concept-termLanguage-label": {"messagekey": "preferredCA-termLanguageLabel"},
+    ".csc-concept-updatedAt-label": {"messagekey": "concept-updatedAtLabel"},
+    ".csc-preferredCA-conceptTermGroup": {"decorators": [{
+        "func": "cspace.makeRepeatable",
+        "type": "fluid",
+        "options": {
+            "repeatTree": {"expander": {
+                "tree": {
+                    ".csc-conceptAuthority-termStatus": {
+                        "default": "",
+                        "optionnames": [
+                            "Provisional",
+                            "Under Review",
+                            "Accepted",
+                            "Rejected",
+                            "Please select a value"
+                        ],
+                        "optionlist": [
+                            "provisional",
+                            "under review",
+                            "accepted",
+                            "rejected",
+                            ""
+                        ],
+                        "selection": "${{row}.termStatus}"
+                    },
+                    ".csc-conceptAuthority-termName": "${{row}.termName}",
+                    ".csc-conceptAuthority-termLanguage": {"decorators": [{
+                        "func": "cspace.termList",
+                        "type": "fluid",
+                        "options": {
+                            "root": "{row}",
+                            "elPath": "termLanguage",
+                            "termListType": "termLanguage"
+                        }
+                    }]},
+                    ".csc-conceptAuthority-termDisplayName": "${{row}.termDisplayName}"
+                },
+                "type": "fluid.noexpand"
+            }},
+            "elPath": "conceptTermGroup",
+            "hidePrimary": true
+        }
+    }]},
+    ".csc-concept-termPrefForLang-label": {"messagekey": "preferredCA-termPrefForLangLabel"},
+    ".csc-concept-termSourceID-label": {"messagekey": "preferredCA-termSourceIDLabel"},
+    ".csc-concept-termDisplayName-label": {"messagekey": "preferredCA-termDisplayNameLabel"},
+    ".csc-concept-updatedBy-label": {"messagekey": "concept-updatedByLabel"},
+    ".csc-concept-termSourceNote-label": {"messagekey": "preferredCA-termSourceNoteLabel"},
+    ".csc-concept-termFormattedDisplayName-label": {"messagekey": "preferredCA-termFormattedDisplayNameLabel"},
+    ".csc-concept-termStatus-label": {"messagekey": "preferredCA-termStatusLabel"},
+    ".csc-concept-updatedAtStart": {
+        "decorators": [{
+            "func": "cspace.datePicker",
+            "type": "fluid"
+        }],
+        "value": "${updatedAtStart}"
+    },
+    ".csc-concept-termQualifier-label": {"messagekey": "preferredCA-termQualifierLabel"},
+    ".csc-concept-updatedAtStart-label": {"messagekey": "concept-updatedAtStartLabel"}
+}

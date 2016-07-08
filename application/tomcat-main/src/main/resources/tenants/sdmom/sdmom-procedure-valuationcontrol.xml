@@ -1,0 +1,10 @@
+<record id="valuationcontrol">
+
+  <services-record-path id="sdmom">valuationcontrols_sdmom:http://collectionspace.org/services/valuationcontrol/local/sdmom,valuationcontrols_sdmom</services-record-path>
+
+  <section id="objectValuationInformation">
+    <!-- convert to dynamic controlled list -->
+    <field id="valueType" ui-search="repeatable" in-title="yes" mini="summary,search,list,relate" autocomplete="vocab-valueType" ui-type="enum" />
+  </section>
+
+</record>

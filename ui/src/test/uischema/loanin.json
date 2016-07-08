@@ -1,0 +1,118 @@
+{
+    "loanin": {
+        "properties": {
+            "termsUsed": {
+                "default": [],
+                "type": "array"
+            },
+            "relations": {
+                "default": {},
+                "type": "object"
+            },
+            "csid": {
+                "type": "string"
+            },
+            "fields": {
+                "properties": {
+                    "loanInNumber": {
+                        "type": "string"
+                    },
+                    "tenantID": {
+                        "type": "string"
+                    },
+                    "lenderGroup": {
+                        "items": {
+                            "properties": {
+                                "_primary": {
+                                    "default": true,
+                                    "type": "boolean"
+                                },
+                                "lendersAuthorizer": {
+                                    "type": "string"
+                                },
+                                "lendersContact": {
+                                    "type": "string"
+                                },
+                                "lendersAuthorizationDate": {
+                                    "type": "date"
+                                },
+                                "lender": {
+                                    "type": "string"
+                                }
+                            },
+                            "type": "object"
+                        },
+                        "type": "array"
+                    },
+                    "loanInNote": {
+                        "type": "string"
+                    },
+                    "loanPurpose": {
+                        "default": "",
+                        "type": "string"
+                    },
+                    "loanStatusGroup": {
+                        "items": {
+                            "properties": {
+                                "_primary": {
+                                    "default": true,
+                                    "type": "boolean"
+                                },
+                                "loanStatusNote": {
+                                    "type": "string"
+                                },
+                                "loanStatus": {
+                                    "default": "",
+                                    "type": "string"
+                                },
+                                "loanStatusDate": {
+                                    "type": "date"
+                                }
+                            },
+                            "type": "object"
+                        },
+                        "type": "array"
+                    },
+                    "loanRenewalApplicationDate": {
+                        "type": "date"
+                    },
+                    "borrowersAuthorizer": {
+                        "type": "string"
+                    },
+                    "updatedBy": {
+                        "type": "string"
+                    },
+                    "loanInDate": {
+                        "type": "date"
+                    },
+                    "updatedAt": {
+                        "type": "date"
+                    },
+                    "loanInContact": {
+                        "type": "string"
+                    },
+                    "loanInConditions": {
+                        "type": "string"
+                    },
+                    "createdBy": {
+                        "type": "string"
+                    },
+                    "createdAt": {
+                        "type": "string"
+                    },
+                    "loanReturnDate": {
+                        "type": "date"
+                    },
+                    "borrowersContact": {
+                        "type": "string"
+                    },
+                    "borrowersAuthorizationDate": {
+                        "type": "date"
+                    }
+                },
+                "type": "object"
+            }
+        },
+        "type": "object"
+    }
+}

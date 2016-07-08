@@ -1,0 +1,12 @@
+<record id="movement" is-extension="true" type="record,procedure" generate-services-schema="true">
+
+  <services-record-path id="sdmom">movements_sdmom:http://collectionspace.org/services/intake/local/sdmom,movements_sdmom</services-record-path>
+
+  <section id="locationMovementInformation">
+    <field id="currentLocation" ui-search="repeatable" in-title="yes" mini="summary,search,list,relate" autocomplete="location-location,location-offsite_sla">
+        <title-selector>titleBar-currentLocation</title-selector>
+    </field>
+    <field id="normalLocation" ui-search="repeatable" autocomplete="location-location,location-offsite_sla"></field>
+    <field id="approvedBy" ui-search="repeatable" autocomplete="person-person,organization-organization" section="sdmom" />
+  </section>
+</record>

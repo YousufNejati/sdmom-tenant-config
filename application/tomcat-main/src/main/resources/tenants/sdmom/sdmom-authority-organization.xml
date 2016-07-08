@@ -1,0 +1,18 @@
+<record id="organization">
+
+<!-- Overriding instances from base -->
+    <instances id="organization">
+        <instance id="organization-organization">
+            <web-url>organization</web-url>
+            <title-ref>organization</title-ref>
+            <title>Local Organizations</title>
+        </instance>
+        <!-- <instance id="organization-ulan_oa">
+            <web-url>ulan_oa</web-url>
+            <title-ref>ulan_oa</title-ref>
+            <title>ULAN Organizations</title>
+        </instance> -->
+    </instances>
+
+
+</record>

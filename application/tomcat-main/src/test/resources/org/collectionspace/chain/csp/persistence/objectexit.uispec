@@ -1,0 +1,156 @@
+{"recordEditor": {
+    ".csc-objectexit-uri-label": {"messagekey": "objectexit-uriLabel"},
+    ".csc-objectexit-exitDateGroup-label": {"messagekey": "objectexit-exitDateGroupLabel"},
+    ".csc-objectexit-updatedAt-label": {"messagekey": "objectexit-updatedAtLabel"},
+    ".csc-objectexit-packingNote": "${fields.packingNote}",
+    ".csc-objectexit-updatedBy": "${fields.updatedBy}",
+    ".csc-objectexit-refName-label": {"messagekey": "objectexit-refNameLabel"},
+    ".csc-objectexit-updatedBy-label": {"messagekey": "objectexit-updatedByLabel"},
+    ".csc-objectexit-createdAt": {
+        "decorators": [{
+            "func": "cspace.datePicker",
+            "type": "fluid"
+        }],
+        "value": "${fields.createdAt}"
+    },
+    ".csc-objectexit-exitNote": "${fields.exitNote}",
+    ".csc-objectexit-packingNote-label": {"messagekey": "objectexit-packingNoteLabel"},
+    ".csc-objectexit-depositor": {
+        "decorators": [{
+            "func": "cspace.autocomplete",
+            "type": "fluid",
+            "options": {
+                "queryUrl": "../../../tenant/core/objectexit/autocomplete/depositor",
+                "vocabUrl": "../../../tenant/core/objectexit/source-vocab/depositor"
+            }
+        }],
+        "value": "${fields.depositor}"
+    },
+    ".csc-objectexit-exitNumber-container": {"decorators": [{
+        "func": "cspace.numberPatternChooser",
+        "type": "fluid",
+        "options": {
+            "model": {
+                "names": ["Object Exit"],
+                "list": ["objectexit"],
+                "samples": ["EX2010.1"]
+            },
+            "selectors": {"numberField": ".csc-objectexit-exitNumber"}
+        }
+    }]},
+    ".csc-objectexit-summary-label": {"messagekey": "objectexit-summaryLabel"},
+    ".csc-objectexit-refName": "${fields.refName}",
+    ".csc-objectexit-createdBy-label": {"messagekey": "objectexit-createdByLabel"},
+    ".csc-objectexit-domaindata-label": {"messagekey": "objectexit-domaindataLabel"},
+    ".csc-objectexit-uri": "${fields.uri}",
+    ".csc-objectexit-currentOwner": {
+        "decorators": [{
+            "func": "cspace.autocomplete",
+            "type": "fluid",
+            "options": {
+                "queryUrl": "../../../tenant/core/objectexit/autocomplete/currentOwner",
+                "vocabUrl": "../../../tenant/core/objectexit/source-vocab/currentOwner"
+            }
+        }],
+        "value": "${fields.currentOwner}"
+    },
+    ".csc-objectexit-updatedAt": {
+        "decorators": [{
+            "func": "cspace.datePicker",
+            "type": "fluid"
+        }],
+        "value": "${fields.updatedAt}"
+    },
+    ".csc-objectexit-exitReason-label": {"messagekey": "objectexit-exitReasonLabel"},
+    ".csc-objectexit-createdAt-label": {"messagekey": "objectexit-createdAtLabel"},
+    ".csc-objectexit-currentOwner-label": {"messagekey": "objectexit-currentOwnerLabel"},
+    ".csc-objectexit-tenantId-label": {"messagekey": "objectexit-tenantIdLabel"},
+    ".csc-objectexit-exitNumber": "${fields.exitNumber}",
+    ".csc-objectexit-objectexitInformation-label": {"messagekey": "objectexit-objectexitInformationLabel"},
+    ".csc-objectexit-exitMethods": {"decorators": [{
+        "func": "cspace.makeRepeatable",
+        "type": "fluid",
+        "options": {
+            "repeatTree": {"expander": {
+                "tree": {".csc-objectexit-exitMethods": {
+                    "default": "",
+                    "optionnames": [
+                        "Please select a value",
+                        "Courier",
+                        "In Person",
+                        "Post"
+                    ],
+                    "optionlist": [
+                        "",
+                        "courier",
+                        "inperson",
+                        "post"
+                    ],
+                    "selection": "${{row}.exitMethod}"
+                }},
+                "type": "fluid.noexpand"
+            }},
+            "elPath": "fields.exitMethods"
+        }
+    }]},
+    ".csc-objectexit-depositor-label": {"messagekey": "objectexit-depositorLabel"},
+    ".csc-objectexit-exitMethod-label": {"messagekey": "objectexit-exitMethodLabel"},
+    ".csc-objectexit-exitDateGroup": {
+        "decorators": [{
+            "func": "cspace.structuredDate",
+            "type": "fluid",
+            "options": {
+                "elPath": "fields.exitDateGroup.dateDisplayDate",
+                "elPaths": {
+                    "dateEarliestSingleQualifier": "fields.exitDateGroup.dateEarliestSingleQualifier",
+                    "scalarValuesComputed": "fields.exitDateGroup.scalarValuesComputed",
+                    "dateLatestDay": "fields.exitDateGroup.dateLatestDay",
+                    "dateLatestYear": "fields.exitDateGroup.dateLatestYear",
+                    "dateAssociation": "fields.exitDateGroup.dateAssociation",
+                    "dateEarliestSingleEra": "fields.exitDateGroup.dateEarliestSingleEra",
+                    "dateDisplayDate": "fields.exitDateGroup.dateDisplayDate",
+                    "dateEarliestSingleCertainty": "fields.exitDateGroup.dateEarliestSingleCertainty",
+                    "dateLatestEra": "fields.exitDateGroup.dateLatestEra",
+                    "dateEarliestSingleQualifierValue": "fields.exitDateGroup.dateEarliestSingleQualifierValue",
+                    "dateLatestCertainty": "fields.exitDateGroup.dateLatestCertainty",
+                    "dateEarliestSingleYear": "fields.exitDateGroup.dateEarliestSingleYear",
+                    "dateLatestQualifier": "fields.exitDateGroup.dateLatestQualifier",
+                    "dateLatestQualifierValue": "fields.exitDateGroup.dateLatestQualifierValue",
+                    "dateEarliestSingleQualifierUnit": "fields.exitDateGroup.dateEarliestSingleQualifierUnit",
+                    "datePeriod": "fields.exitDateGroup.datePeriod",
+                    "dateEarliestScalarValue": "fields.exitDateGroup.dateEarliestScalarValue",
+                    "dateLatestMonth": "fields.exitDateGroup.dateLatestMonth",
+                    "dateNote": "fields.exitDateGroup.dateNote",
+                    "dateLatestScalarValue": "fields.exitDateGroup.dateLatestScalarValue",
+                    "dateLatestQualifierUnit": "fields.exitDateGroup.dateLatestQualifierUnit",
+                    "dateEarliestSingleDay": "fields.exitDateGroup.dateEarliestSingleDay",
+                    "dateEarliestSingleMonth": "fields.exitDateGroup.dateEarliestSingleMonth"
+                }
+            }
+        }],
+        "value": "${fields.exitDateGroup.dateDisplayDate}"
+    },
+    ".csc-objectexit-number-label": {"messagekey": "objectexit-numberLabel"},
+    ".csc-objectexit-tenantId": "${fields.tenantId}",
+    ".csc-objectexit-createdBy": "${fields.createdBy}",
+    ".csc-objectexit-exitReason": {
+        "default": "",
+        "optionnames": [
+            "Please select a value",
+            "Deaccession",
+            "Disposal",
+            "Return of Loan"
+        ],
+        "optionlist": [
+            "",
+            "deaccession",
+            "disposal",
+            "returnofloan"
+        ],
+        "selection": "${fields.exitReason}"
+    },
+    ".csc-objectexit-exitNumber-label": {"messagekey": "objectexit-exitNumberLabel"},
+    ".csc-objectexit-coreInformation-label": {"messagekey": "objectexit-coreInformationLabel"},
+    ".csc-objectexit-exitNote-label": {"messagekey": "objectexit-exitNoteLabel"},
+    ".csc-objectexit-exitMethods-label": {"messagekey": "objectexit-exitMethodsLabel"}
+}}

@@ -1,0 +1,268 @@
+{
+  "namespaces": {
+    "properties": {
+      "citation": {
+        "properties": {
+          "citation": {
+            "properties": {
+              "nptAllowed": {
+                "default": true, 
+                "type": "boolean"
+              }, 
+              "order": {
+                "default": 0, 
+                "type": "integer"
+              }
+            }, 
+            "type": "object"
+          }, 
+          "worldcat": {
+            "properties": {
+              "nptAllowed": {
+                "default": true, 
+                "type": "boolean"
+              }, 
+              "order": {
+                "default": 1, 
+                "type": "integer"
+              }
+            }, 
+            "type": "object"
+          }
+        }, 
+        "type": "object"
+      }, 
+      "concept": {
+        "properties": {
+          "activity": {
+            "properties": {
+              "nptAllowed": {
+                "default": true, 
+                "type": "boolean"
+              }, 
+              "order": {
+                "default": 2, 
+                "type": "integer"
+              }
+            }, 
+            "type": "object"
+          }, 
+          "concept": {
+            "properties": {
+              "nptAllowed": {
+                "default": true, 
+                "type": "boolean"
+              }, 
+              "order": {
+                "default": 0, 
+                "type": "integer"
+              }
+            }, 
+            "type": "object"
+          }, 
+          "material_ca": {
+            "properties": {
+              "nptAllowed": {
+                "default": true, 
+                "type": "boolean"
+              }, 
+              "order": {
+                "default": 1, 
+                "type": "integer"
+              }
+            }, 
+            "type": "object"
+          }
+        }, 
+        "type": "object"
+      }, 
+      "location": {
+        "properties": {
+          "location": {
+            "properties": {
+              "nptAllowed": {
+                "default": true, 
+                "type": "boolean"
+              }, 
+              "order": {
+                "default": 0, 
+                "type": "integer"
+              }
+            }, 
+            "type": "object"
+          }, 
+          "offsite_sla": {
+            "properties": {
+              "nptAllowed": {
+                "default": true, 
+                "type": "boolean"
+              }, 
+              "order": {
+                "default": 1, 
+                "type": "integer"
+              }
+            }, 
+            "type": "object"
+          }
+        }, 
+        "type": "object"
+      }, 
+      "organization": {
+        "properties": {
+          "organization": {
+            "properties": {
+              "nptAllowed": {
+                "default": true, 
+                "type": "boolean"
+              }, 
+              "order": {
+                "default": 0, 
+                "type": "integer"
+              }
+            }, 
+            "type": "object"
+          }, 
+          "ulan_oa": {
+            "properties": {
+              "nptAllowed": {
+                "default": true, 
+                "type": "boolean"
+              }, 
+              "order": {
+                "default": 1, 
+                "type": "integer"
+              }
+            }, 
+            "type": "object"
+          }
+        }, 
+        "type": "object"
+      }, 
+      "person": {
+        "properties": {
+          "person": {
+            "properties": {
+              "nptAllowed": {
+                "default": true, 
+                "type": "boolean"
+              }, 
+              "order": {
+                "default": 0, 
+                "type": "integer"
+              }
+            }, 
+            "type": "object"
+          }, 
+          "ulan_pa": {
+            "properties": {
+              "nptAllowed": {
+                "default": true, 
+                "type": "boolean"
+              }, 
+              "order": {
+                "default": 1, 
+                "type": "integer"
+              }
+            }, 
+            "type": "object"
+          }
+        }, 
+        "type": "object"
+      }, 
+      "place": {
+        "properties": {
+          "place": {
+            "properties": {
+              "nptAllowed": {
+                "default": true, 
+                "type": "boolean"
+              }, 
+              "order": {
+                "default": 0, 
+                "type": "integer"
+              }
+            }, 
+            "type": "object"
+          }, 
+          "tgn_place": {
+            "properties": {
+              "nptAllowed": {
+                "default": true, 
+                "type": "boolean"
+              }, 
+              "order": {
+                "default": 1, 
+                "type": "integer"
+              }
+            }, 
+            "type": "object"
+          }
+        }, 
+        "type": "object"
+      }, 
+      "taxon": {
+        "properties": {
+          "common_ta": {
+            "properties": {
+              "nptAllowed": {
+                "default": true, 
+                "type": "boolean"
+              }, 
+              "order": {
+                "default": 1, 
+                "type": "integer"
+              }
+            }, 
+            "type": "object"
+          }, 
+          "taxon": {
+            "properties": {
+              "nptAllowed": {
+                "default": true, 
+                "type": "boolean"
+              }, 
+              "order": {
+                "default": 0, 
+                "type": "integer"
+              }
+            }, 
+            "type": "object"
+          }
+        }, 
+        "type": "object"
+      }, 
+      "work": {
+        "properties": {
+          "cona_work": {
+            "properties": {
+              "nptAllowed": {
+                "default": true, 
+                "type": "boolean"
+              }, 
+              "order": {
+                "default": 1, 
+                "type": "integer"
+              }
+            }, 
+            "type": "object"
+          }, 
+          "work": {
+            "properties": {
+              "nptAllowed": {
+                "default": true, 
+                "type": "boolean"
+              }, 
+              "order": {
+                "default": 0, 
+                "type": "integer"
+              }
+            }, 
+            "type": "object"
+          }
+        }, 
+        "type": "object"
+      }
+    }, 
+    "type": "object"
+  }
+}

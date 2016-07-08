@@ -1,0 +1,37 @@
+{
+  "recordlist": {
+    "default": [
+      "material_ca", 
+      "concept", 
+      "activity", 
+      "person", 
+      "ulan_pa", 
+      "offsite_sla", 
+      "location", 
+      "loanin", 
+      "loanout", 
+      "acquisition", 
+      "organization", 
+      "ulan_oa", 
+      "cataloging", 
+      "movement", 
+      "tgn_place", 
+      "place", 
+      "common_ta", 
+      "taxon", 
+      "objectexit", 
+      "citation", 
+      "worldcat", 
+      "intake", 
+      "group", 
+      "work",
+      "cona_work",
+      "media",
+      "conditioncheck",
+      "conservation",
+      "exhibition",
+      "valuationcontrol"
+    ], 
+    "type": "array"
+  }
+}

@@ -1,0 +1,71 @@
+{
+    "csid": "IN2004.002",
+    "fields": {
+        "returnDate": "",
+        "depositor": "urn:cspace:org.collectionspace.demo:orgperson:name(Demo Person Authority):person(Achmed Abdullah)'Achmed Abdullah'",
+        "responsibleEntity": "",
+        "packingNote": "",
+        "entryReason": "commission",
+        "entryNumber": "IN2004.002",
+        "entryMethods": [
+            {
+                "entryMethod": "in-person",
+                "_primary": false 
+            },
+            {
+                "entryMethod": "post",
+                "_primary": true 
+            }
+        ],
+        "entryNote": "",
+        "numObjects": "42",
+        "description": "Licensed merchandise figurines from The Nightmare Before Christmas and Beetlejuice",
+        "entryDate": "",
+        "donor": "Richard Gere",
+        "depositor": "urn:cspace:org.collectionspace.demo:personauthority:id(cc025527-3f1f-4a21-84fc):person:id(9f14f23e-381a-4dc6-9bd6)'Achmed+Abdullah'" 
+    },
+    "termsUsed": [
+        {
+            "sourceFieldName": "depositor",
+            "number": "Achmed Abdullah",
+            "csid": "9f14f23e-381a-4dc6-9bd6",
+            "recordtype": "person"
+        } 
+    ],
+    "relations": {
+        "cataloging": [
+            {
+                "csid": "1984.068.0338",
+                "number": "1984.068.0338",
+                "summary": "somethings",
+                "recordtype": "cataloging",
+                "relationshiptype": "affects" 
+            },
+            {
+                "csid": "1984.068.0335b",
+                "number": "1984.068.0335b",
+                "summary": "some other thing",
+                "recordtype": "cataloging",
+                "relationshiptype": "also affects" 
+            } 
+        ],
+        "intake": [
+            {
+                "csid": "2007.4-a",
+                "number": "2007.4-a",
+                "summary": "yet other thing",
+                "recordtype": "intake",
+                "relationshiptype": "also affects somewhat" 
+            }
+        ],
+        "acquisition": [
+            {
+                "csid": "ACQ2009.2",
+                "number": "ACQ2009.2",
+                "summary": "different, yet",
+                "recordtype": "acquisition",
+                "relationshiptype": "also affects somewhat" 
+            } 
+        ] 
+    }
+}

@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<component name="org.collectionspace.ecm.platform.default.LifeCycleManagerExtensions">
+
+  <extension target="org.nuxeo.ecm.core.lifecycle.LifeCycleService"
+  		point="types">
+    <types>
+      <type name="CollectionSpaceDocument">default</type>
+    </types>
+  </extension>
+
+  <!-- The definition of the CollectionSpace default lifecycle name "cs_default"  -->
+  <extension target="org.nuxeo.ecm.core.lifecycle.LifeCycleService"
+  		point="lifecycle">
+    <documentation>CollectionSpace core default life cycle definition.</documentation>
+    <lifecycle name="cs_default" defaultInitial="project">
+      <transitions>
+        <transition name="delete" destinationState="deleted">
+          <description>Move document to trash (temporary delete)</description>
+        </transition>
+        <transition name="undelete" destinationState="project">
+          <description>Undelete the document.</description>
+        </transition>        
+      </transitions>
+      <states>
+        <state name="project" description="Default state" initial="true">
+          <transitions>
+            <transition>delete</transition>
+          </transitions>
+        </state>
+        <state name="deleted" description="Document is deleted">
+          <transitions>
+            <transition>undelete</transition>
+          </transitions>
+        </state>
+      </states>
+    </lifecycle>
+  </extension>
+  
+  <!-- The definition of the CollectionSpace locking lifecycle name "cs_locking"  -->  
+  <extension target="org.nuxeo.ecm.core.lifecycle.LifeCycleService"
+  		point="lifecycle">
+    <documentation>CollectionSpace "locking" life cycle definition.</documentation>
+    <lifecycle name="cs_locking" defaultInitial="project">
+      <transitions>
+        <transition name="lock" destinationState="locked">
+          <description>Lock document</description>
+        </transition>
+        <transition name="delete" destinationState="deleted">
+          <description>Move document to trash (temporary delete)</description>
+        </transition>
+        <transition name="undelete" destinationState="project">
+          <description>Undelete the document.</description>
+        </transition>        
+      </transitions>	  
+      <states>
+        <state name="project" description="Default state" initial="true">
+          <transitions>
+            <transition>delete</transition>
+            <transition>lock</transition>
+          </transitions>
+        </state>
+        <state name="locked" description="Locked state">
+        	<!-- No transitions allowed from locked state. -->
+        </state>
+        <state name="deleted" description="Document is deleted">
+          <transitions>
+            <transition>undelete</transition>
+          </transitions>
+        </state>
+      </states>
+    </lifecycle>
+  </extension>
+</component>

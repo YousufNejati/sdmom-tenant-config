@@ -1,0 +1,189 @@
+{
+  "location": {
+    "properties": {
+      "csid": {
+        "type": "string"
+      }, 
+      "fields": {
+        "properties": {
+          "accessNote": {
+            "type": "string"
+          }, 
+          "address": {
+            "type": "string"
+          }, 
+          "broaderContext": {
+            "type": "string"
+          }, 
+          "broaderContextType": {
+            "default": "", 
+            "type": "string"
+          }, 
+          "conditionGroup": {
+            "items": {
+              "properties": {
+                "_primary": {
+                  "default": true, 
+                  "type": "boolean"
+                }, 
+                "conditionNote": {
+                  "type": "string"
+                }, 
+                "conditionNoteDate": {
+                  "type": "date"
+                }
+              }, 
+              "type": "object"
+            }, 
+            "type": "array"
+          }, 
+          "createdAt": {
+            "type": "string"
+          }, 
+          "createdBy": {
+            "type": "string"
+          }, 
+          "csid": {
+            "type": "string"
+          }, 
+          "equivalentContexts": {
+            "items": {
+              "properties": {
+                "_primary": {
+                  "default": true, 
+                  "type": "boolean"
+                }, 
+                "equivalentContext": {
+                  "type": "string"
+                }
+              }, 
+              "type": "object"
+            }, 
+            "type": "array"
+          }, 
+          "locTermGroup": {
+            "items": {
+              "properties": {
+                "_primary": {
+                  "default": true, 
+                  "type": "boolean"
+                }, 
+                "termDisplayName": {
+                  "type": "string"
+                }, 
+                "termLanguage": {
+                  "default": "", 
+                  "type": "string"
+                }, 
+                "termName": {
+                  "type": "string"
+                }, 
+                "termPrefForLang": {
+                  "default": false, 
+                  "type": "boolean"
+                }, 
+                "termQualifier": {
+                  "type": "string"
+                }, 
+                "termSource": {
+                  "type": "string"
+                }, 
+                "termSourceDetail": {
+                  "type": "string"
+                }, 
+                "termSourceID": {
+                  "type": "string"
+                }, 
+                "termSourceNote": {
+                  "type": "string"
+                }, 
+                "termFormattedDisplayName": {
+                  "type": "string"
+                }, 
+                "termStatus": {
+                  "default": "provisional", 
+                  "type": "string"
+                }, 
+                "termType": {
+                  "default": "", 
+                  "type": "string"
+                }
+              }, 
+              "type": "object"
+            }, 
+            "type": "array"
+          }, 
+          "locationType": {
+            "default": "", 
+            "type": "string"
+          }, 
+          "narrowerContexts": {
+            "items": {
+              "properties": {
+                "_primary": {
+                  "default": true, 
+                  "type": "boolean"
+                }, 
+                "narrowerContext": {
+                  "type": "string"
+                }, 
+                "narrowerContextType": {
+                  "default": "", 
+                  "type": "string"
+                }
+              }, 
+              "type": "object"
+            }, 
+            "type": "array"
+          }, 
+          "refName": {
+            "type": "string"
+          }, 
+          "relatedTerms": {
+            "items": {
+              "properties": {
+                "_primary": {
+                  "default": true, 
+                  "type": "boolean"
+                }, 
+                "relatedTerm": {
+                  "type": "string"
+                }
+              }, 
+              "type": "object"
+            }, 
+            "type": "array"
+          }, 
+          "securityNote": {
+            "type": "string"
+          }, 
+          "shortIdentifier": {
+            "type": "string"
+          }, 
+          "tenantID": {
+            "type": "string"
+          }, 
+          "updatedAt": {
+            "type": "date"
+          }, 
+          "updatedBy": {
+            "type": "string"
+          }, 
+          "uri": {
+            "type": "string"
+          }
+        }, 
+        "type": "object"
+      }, 
+      "relations": {
+        "default": {}, 
+        "type": "object"
+      }, 
+      "termsUsed": {
+        "default": [], 
+        "type": "array"
+      }
+    }, 
+    "type": "object"
+  }
+}

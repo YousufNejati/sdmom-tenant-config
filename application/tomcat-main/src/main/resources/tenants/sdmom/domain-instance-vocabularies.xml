@@ -1,0 +1,924 @@
+<instances>
+
+  <include src="extensions/anthro-vocabularies.xml" strip-root="yes" />
+
+  <instance id="vocab-approvalState">
+    <web-url>approvalState</web-url>
+    <title-ref>approvalState</title-ref>
+    <title>Approval States</title>
+    <options>
+        <option id="yes">Yes</option>
+        <option id="no">No</option>
+        <option id="pending">Pending</option>
+    </options>
+  </instance>
+
+  <instance id="vocab-conditionStatus">
+    <web-url>conditionStatus</web-url>
+    <title-ref>conditionStatus</title-ref>
+    <title>Condition Check Status</title>
+    <options>
+        <option id="needsNoWork">Needs No Work</option>
+        <option id="exhibitableNeedsWork">Exhibitable/Needs Work</option>
+        <option id="notExhibitableStable">Not Exhibitable/Stable</option>
+        <option id="jeopardyUnstable">Jeopardy/Unstable</option>
+    </options>
+  </instance>
+
+  <instance id="vocab-conditionCondition">
+    <web-url>condition</web-url>
+    <title-ref>condition</title-ref>
+    <title>Condition Check Condition</title>
+    <options>
+        <option id="excellent">Excellent</option>
+        <option id="good">Good</option>
+        <option id="fair">Fair</option>
+        <option id="poor">Poor</option>
+    </options>
+  </instance>
+
+  <instance id="vocab-hazard">
+    <web-url>hazard</web-url>
+    <title-ref>hazard</title-ref>
+    <title>Condition Check Hazard</title>
+    <options>
+        <option id="poisonous">Poisonous</option>
+        <option id="cumbustable">Combustable</option>
+        <option id="radioactive">Radioactive</option>
+        <option id="other">other</option>
+    </options>
+  </instance>
+
+  <instance id="vocab-collectionType">
+    <web-url>collectionType</web-url>
+    <title-ref>collectionType</title-ref>
+    <title>Collection Type</title>
+    <options>
+      <option id="archaeology">Archaeology</option>
+      <option id="archives">Archives</option>
+      <option id="images">Images</option>
+      <option id="objects">Objects</option>
+      <option id="physicalAnthropology">Physical Anthropology</option>
+    </options>
+  </instance>
+
+  <instance id="vocab-nameCurrency">
+    <web-url>nameCurrency</web-url>
+    <title-ref>nameCurrency</title-ref>
+    <title>Name Currency</title>
+    <options>
+        <option id="current">Current</option>
+        <option id="outOfDate">Out-of-date</option>
+        <option id="unknown">Unknown</option>
+    </options>
+  </instance>
+
+  <instance id="vocab-nameLevel">
+    <web-url>nameLevel</web-url>
+    <title-ref>nameLevel</title-ref>
+    <title>Name Level</title>
+    <options>
+      <option id="album">Album</option>
+      <option id="collection">Collection</option>
+      <option id="component">Component</option>
+      <option id="folder">Folder</option>
+      <option id="item">Item</option>
+      <option id="group">Group</option>
+      <option id="multiples">Multiples</option>
+      <option id="series">Series</option>
+      <option id="set">Set</option>
+      <option id="subgroup">Subgroup</option>
+      <option id="subseries">Subseries</option>
+      <option id="volume">Volume</option>
+    </options>
+  </instance>
+
+  <instance id="vocab-otherNumberType">
+    <web-url>otherNumberType</web-url>
+    <title-ref>otherNumberType</title-ref>
+    <title>Other Number Type</title>
+    <options>
+      <option id="slideNumber">Slide Number</option>
+      <option id="negativeNumber">Negative Number</option>
+      <option id="frameNumber">Frame Number</option>
+      <option id="creator">Creator</option>
+      <option id="lender">Lender</option>
+      <option id="donorCollector">Donor/Collector</option>
+      <option id="catalogNumber">Catalog Number</option>
+      <option id="previousCatalogNumber">Previous Catalog Number</option>
+      <option id="previous">Previous</option>
+      <option id="serial">Serial</option>
+      <option id="series">Series</option>
+      <option id="unknown">unknown</option>
+      <option id="nonSDMoMcatalogNumber">Non-SDMoM Catalog Number</option>
+      <option id="copyNumber">Copy Number</option>
+      <option id="edition">Edition</option>
+      <option id="callNumber">Call Number</option>
+    </options>
+  </instance>
+
+  <instance id="vocab-objectStanding">
+    <web-url>objectStanding</web-url>
+    <title-ref>objectStanding</title-ref>
+    <title>Object Standing</title>
+    <options>
+      <option id="ok">OK</option>
+      <option id="located">Located</option>
+      <option id="missing">Missing</option>
+      <option id="stolen">Stolen</option>
+      <option id="deaccessioned">Deaccessioned</option>
+      <option id="repatriated">Repatriated</option>
+      <option id="onLoan">On Loan</option>
+      <option id="returned">Returned</option>
+      <option id="reassigned">Reassigned</option>
+      <option id="restricted">Restricted</option>
+    </options>
+  </instance>
+
+  <instance id="vocab-classificationSystem">
+    <web-url>classificationSystem</web-url>
+    <title-ref>classificationSystem</title-ref>
+    <title>Object Classification Systems</title>
+    <options>
+      <option id="aaslhNomenclature">AASLH Nomenclature</option>
+      <option id="noSystem">no system</option>
+      <option id="bennyhoffOlivellaBeadTypology">Bennyhoff Olivella bead typology</option>
+      <option id="giffordWorkedBoneTypology">Gifford worked bone typology</option>
+      <option id="giffordWorkedShellTypology">Gifford worked shell typology</option>
+      <option id="heizerProjectilePointTypology">Heizer projectile point typology</option>
+      <option id="justicProjectilePointTypology">Justic projectile point typology</option>
+      <option id="meighanHistoricGlassBeadTypology">Meighan historic glass bead typology</option>
+      <option id="treganzaClayArtifactTypology">Treganza clay artifact typology</option>
+    </options>
+  </instance>
+
+  <instance id="vocab-titleType">
+    <web-url>titleType</web-url>
+    <title-ref>titleType</title-ref>
+    <title>Title Type</title>
+    <options>
+      <option id="assignedByArtist">Assigned by Artist</option>
+      <option id="collection">Collection</option>
+      <option id="commonName">Common Name</option>
+      <option id="popular">Popular</option>
+      <option id="series">Series</option>
+      <option id="sic">Sic</option>
+      <option id="trade">Trade</option>
+    </options>
+  </instance>
+
+  <instance id="vocab-recordStatus">
+    <web-url>recordStatus</web-url>
+    <title-ref>recordStatus</title-ref>
+    <title>Record Status</title>
+    <options>
+      <option id="approved">Approved</option>
+      <option id="inProcess">In Process</option>
+      <option id="skeleton">Skeleton</option>
+      <option id="temporary">Temporary</option>
+      <option id="pendingReview">Pending Review</option>
+      <option id="dead">Dead</option>
+    </options>
+  </instance>
+
+  <instance id="vocab-inscriptionMethod">
+    <web-url>inscriptionMethod</web-url>
+    <title-ref>inscriptionMethod</title-ref>
+    <title>Inscription Method</title>
+    <options>
+      <option id="brand">Brand</option>
+      <option id="embossed">Embossed</option>
+      <option id="embroidered">Embroidered</option>
+      <option id="engraved">Engraved</option>
+      <option id="etched">Etched</option>
+      <option id="painted">Painted</option>
+      <option id="penAndInk">Pen and ink</option>
+      <option id="pencil">Pencil</option>
+      <option id="printed">Printed</option>
+      <option id="stamped">Stamped</option>
+      <option id="stencilled">Stencilled</option>
+      <option id="other">other</option>
+    </options>
+  </instance>
+
+  <instance id="vocab-inscriptionType">
+    <web-url>inscriptionType</web-url>
+    <title-ref>inscriptionType</title-ref>
+    <title>Inscription Type</title>
+    <options>
+      <option id="clothLabel">Cloth Label</option>
+      <option id="decoration">Decoration</option>
+      <option id="hallmark">Hallmark</option>
+      <option id="inscription">Inscription</option>
+      <option id="label">Label</option>
+      <option id="makersMark">Maker's Mark</option>
+      <option id="manufacturersMark">Manufacturer's Mark</option>
+      <option id="paperTag">Paper Tag</option>
+      <option id="signature">Signature</option>
+      <option id="stamp">Stamp</option>
+    </options>
+  </instance>
+
+  <instance id="vocab-inscriptionPosition">
+    <web-url>inscriptionPosition</web-url>
+    <title-ref>inscriptionPosition</title-ref>
+    <title>Inscription Position</title>
+    <options>
+      <option id="above">Above</option>
+      <option id="back">Back</option>
+      <option id="base">Base</option>
+      <option id="below">Below</option>
+      <option id="bottom">Bottom</option>
+      <option id="front">Front</option>
+      <option id="inside">Inside</option>
+      <option id="left">Left</option>
+      <option id="outside">Outside</option>
+      <option id="recto">Recto</option>
+      <option id="right">Right</option>
+      <option id="rim">Rim</option>
+      <option id="top">Top</option>
+      <option id="verso">Verso</option>
+    </options>
+  </instance>
+
+  <instance id="vocab-objectStatus">
+    <web-url>objectStatus</web-url>
+    <title-ref>objectStatus</title-ref>
+    <title>Object Status</title>
+    <options>
+      <option id="cast">Cast</option>
+      <option id="copy">Copy</option>
+      <option id="forgery">Forgery</option>
+      <option id="original">Original</option>
+      <option id="other">other</option>
+      <option id="photocopy">Photocopy</option>
+      <option id="touristTrade">Tourist Trade</option>
+      <option id="unknown">unknown</option>
+      <option id="questionable">Questionable</option>
+    </options>
+  </instance>
+
+  <instance id="vocab-technique">
+    <web-url>technique</web-url>
+    <title-ref>technique</title-ref>
+    <title>Technique</title>
+    <options>
+      <option id="penAndInk">Pen and Ink</option>
+      <option id="impasto">Impasto</option>
+      <option id="etching">Etching</option>
+      <option id="lithograph">Lithograph</option>
+      <option id="giclee">Giclee</option>
+      <option id="acrylicPaint">Acrylic Paint</option>
+      <option id="aquatint">Aquatint</option>
+      <option id="blockPrint">Block Print</option>
+      <option id="chiaroscuro">Chiaroscuro</option>
+      <option id="charcoal">Charcoal</option>
+      <option id="carving">Carving</option>
+      <option id="cast">Cast</option>
+      <option id="collage">Collage</option>
+      <option id="crayon">Crayon</option>
+      <option id="decopage">Decopage</option>
+      <option id="dryPoint">Dry Point</option>
+      <option id="embossing">Embossing</option>
+      <option id="engraving">Engraving</option>
+      <option id="gouache">Gouache</option>
+      <option id="lostWax">Lost Wax</option>
+      <option id="linocut">Linocut</option>
+      <option id="intaglio">Intaglio</option>
+      <option id="lineDrawing">Line Drawing</option>
+      <option id="mezzotint">Mezzotint</option>
+      <option id="mixedMedia">Mixed Media</option>
+      <option id="monotype">Monotype</option>
+      <option id="offsetPrinting">Offset Printing</option>
+      <option id="pastel">Pastel</option>
+      <option id="relief">Relief</option>
+      <option id="serigraph">Serigraph</option>
+      <option id="silkscreen">Silkscreen</option>
+      <option id="woodcut">Woodcut</option>
+      <option id="oilPaint">Oil Paint</option>
+    </options>
+  </instance>
+
+  <instance id="vocab-techniqueType">
+    <web-url>techniqueType</web-url>
+    <title-ref>techniqueType</title-ref>
+    <title>Technique Type</title>
+    <options>
+      <option id="massProduced">Mass-produced</option>
+      <option id="handCrafted">Hand-crafted</option>
+    </options>
+  </instance>
+
+  <instance id="vocab-viewerRole">
+    <web-url>viewerRole</web-url>
+    <title-ref>viewerRole</title-ref>
+    <title>Viewer Role</title>
+    <options>
+      <option id="curator">Curator</option>
+      <option id="owner">Owner</option>
+      <option id="consultant">Consultant</option>
+      <option id="researcher">Researcher</option>
+      <option id="staff">Staff</option>
+      <option id="other">Other</option>
+    </options>
+  </instance>
+
+  <instance id="vocab-referenceUse">
+    <web-url>referenceUse</web-url>
+    <title-ref>referenceUse</title-ref>
+    <title>Reference Use</title>
+    <options>
+      <option id="publishedIn">Published in</option>
+      <option id="referencedFor">Referenced for</option>
+      <option id="onlineAt">Online at</option>
+      <option id="other">Other</option>
+      <option id="alsoAvailableAt">Also available at</option>
+    </options>
+  </instance>
+
+  <instance id="vocab-webReady">
+    <web-url>webReady</web-url>
+    <title-ref>webReady</title-ref>
+    <title>Web Ready</title>
+    <options>
+      <option id="yes">Yes</option>
+      <option id="no">No</option>
+      <option id="inReview">In Review</option>
+      <option id="online">Online</option>
+    </options>
+  </instance>
+
+  <instance id="vocab-personTitle">
+    <web-url>personTitle</web-url>
+    <title-ref>personTitle</title-ref>
+    <title>Person Title</title>
+    <options>
+      <option id="admiral">Admiral</option>
+      <option id="asstVice">Asst. Vice</option>
+      <option id="canon">Canon</option>
+      <option id="captain">Captain</option>
+      <option id="chief">Chief</option>
+      <option id="colonel">Colonel</option>
+      <option id="commander">Commander</option>
+      <option id="corporal">Corporal</option>
+      <option id="deputy">Deputy</option>
+      <option id="deputySheriff">Deputy Sheriff</option>
+      <option id="dr">Dr.</option>
+      <option id="duke">Duke</option>
+      <option id="emperor">Emperor</option>
+      <option id="empress">Empress</option>
+      <option id="father">Father</option>
+      <option id="general">General</option>
+      <option id="governor">Governor</option>
+      <option id="judge">Judge</option>
+      <option id="junior">Junior</option>
+      <option id="king">King</option>
+      <option id="lieutenant">Lieutenant</option>
+      <option id="ltCommander">Lt. Commander</option>
+      <option id="master">Master</option>
+      <option id="miss">Miss</option>
+      <option id="misses">Misses</option>
+      <option id="mr">Mr.</option>
+      <option id="mrAndMrs">Mr. and Mrs.</option>
+      <option id="mrs">Mrs.</option>
+      <option id="ms">Ms.</option>
+      <option id="national">National</option>
+      <option id="president">President</option>
+      <option id="prince">Prince</option>
+      <option id="professor">Professor</option>
+      <option id="queen">Queen</option>
+      <option id="rabbi">Rabbi</option>
+      <option id="ranger">Ranger</option>
+      <option id="rearAdmiral">Rear Admiral</option>
+      <option id="reverend">Reverend</option>
+      <option id="royal">Royal</option>
+      <option id="saint">Saint</option>
+      <option id="sergeant">Sergeant</option>
+      <option id="sir">Sir</option>
+      <option id="sister">Sister</option>
+      <option id="sr">Sr.</option>
+      <option id="sra">Sra.</option>
+      <option id="viceAdmiral">Vice Admiral</option>
+    </options>
+  </instance>
+
+  <instance id="vocab-entryReason">
+    <web-url>entryReason</web-url>
+    <title-ref>entryReason</title-ref>
+    <title>Intake Entry Reason</title>
+    <options>
+      <option id="acquisition">Acquisition</option>
+      <option id="consideration">Consideration</option>
+      <option id="auction">Auction</option>
+      <option id="enquiry">Enquiry</option>
+      <option id="commission">Commission</option>
+    </options>
+  </instance>
+
+  <instance id="vocab-entryStatus">
+    <web-url>entryStatus</web-url>
+    <title-ref>entryStatus</title-ref>
+    <title>Intake Entry Status</title>
+    <options>
+      <option id="located">Located</option>
+      <option id="missing">Missing</option>
+      <option id="stolen">Stolen</option>
+      <option id="onloan">On Loan</option>
+      <option id="returned">Returned</option>
+      <option id="restricted">Restricted</option>
+    </options>
+  </instance>
+
+  <instance id="vocab-telephoneNumberType">
+    <web-url>telephoneNumberType</web-url>
+    <title-ref>telephoneNumberType</title-ref>
+    <title>Telephone Number Type</title>
+    <options>
+      <option id="business">Business</option>
+      <option id="home">Home</option>
+      <option id="mobile">Mobile</option>
+      <option id="fax">Fax</option>
+      <option id="other">other</option>
+    </options>
+  </instance>
+
+  <instance id="vocab-conditionChkMethod">
+    <web-url>conditionChkMethod</web-url>
+    <title-ref>conditionChkMethod</title-ref>
+    <title>Condition Check Method</title>
+    <options>
+      <option id="observed">Observed</option>
+      <option id="xrayed">X-rayed</option>
+    </options>
+  </instance>
+
+  <instance id="vocab-conservationTreatmentPriority">
+    <web-url>conservationTreatmentPriority</web-url>
+    <title-ref>conservationTreatmentPriority</title-ref>
+    <title>Conservation Treatment Priority</title>
+    <options>
+      <option id="none">None</option>
+      <option id="low">Low</option>
+      <option id="medium">Medium</option>
+      <option id="high">High</option>
+      <option id="urgent">Urgent</option>
+    </options>
+  </instance>
+
+  <!-- You'll find this in base-instance-vocabularies.xml -->
+  <!-- <instance id="vocab-conditionCheckReason">
+    <web-url>conditionCheckReason</web-url>
+    <title-ref>conditionCheckReason</title-ref>
+    <title>Condition Check Reason</title>
+  </instance> -->
+
+  <instance id="vocab-condition">
+    <web-url>condition</web-url>
+    <title-ref>condition</title-ref>
+    <title>Condition</title>
+    <options>
+      <option id="excellent">Excellent</option>
+      <option id="good">Good</option>
+      <option id="fair">Fair</option>
+      <option id="poor">Poor</option>
+      <option id="notRated">Not Rated</option>
+    </options>
+  </instance>
+
+  <instance id="vocab-conditionAssessmentTerm">
+    <web-url>conditionAssessmentTerm</web-url>
+    <title-ref>conditionAssessmentTerm</title-ref>
+    <title>Condition Check Term</title>
+    <options>
+      <option id="abrasion">Abrasion</option>
+      <option id="accretion">Accretion</option>
+      <option id="bleeding">Bleeding</option>
+      <option id="bubblyAreas">Bubbly areas</option>
+      <option id="adhesiveResidue">Adhesive residue</option>
+      <option id="chip">Chip</option>
+      <option id="corrosion">Corrosion</option>
+      <option id="crack">Crack</option>
+      <option id="crease">Crease</option>
+      <option id="crocking">Crocking</option>
+      <option id="delamination">Delamination</option>
+      <option id="dent">Dent</option>
+      <option id="discoloration">Discoloration</option>
+      <option id="disjoin">Disjoin</option>
+      <option id="distortion">Distortion</option>
+      <option id="dryRot">Dry rot</option>
+      <option id="efflorescence">Efflorescence</option>
+      <option id="embrittlement">Embrittlement</option>
+      <option id="gouge">Gouge</option>
+      <option id="fraying">Fraying</option>
+      <option id="inclusion">Inclusion</option>
+      <option id="iridescence">Iridescence</option>
+      <option id="loss">Loss</option>
+      <option id="mildew">Mildew</option>
+      <option id="missingElement">Missing element</option>
+      <option id="mold">Mold</option>
+      <option id="odor">Odor</option>
+      <option id="oozing">Oozing</option>
+      <option id="patina">Patina</option>
+      <option id="pitting">Pitting</option>
+      <option id="powdering">Powdering</option>
+      <option id="redRot">Red rot</option>
+      <option id="scratch">Scratch</option>
+      <option id="sheen">Sheen</option>
+      <option id="silvering">Silvering</option>
+      <option id="spalling">Spalling</option>
+      <option id="soil">Soil</option>
+      <option id="stain">Stain</option>
+      <option id="sugaring">Sugaring</option>
+      <option id="sweating">Sweating</option>
+      <option id="tarnish">Tarnish</option>
+      <option id="tear">Tear</option>
+      <option id="wear">Wear</option>
+      <option id="weeping">Weeping</option>
+      <option id="blanching">Blanching</option>
+      <option id="blister">Blister</option>
+      <option id="bloom">Bloom</option>
+      <option id="buckling">Buckling</option>
+      <option id="chalking">Chalking</option>
+      <option id="check">Check</option>
+      <option id="cleavage">Cleavage</option>
+      <option id="crackle">Crackle</option>
+      <option id="cupping">Cupping</option>
+      <option id="dishing">Dishing</option>
+      <option id="draw">Draw</option>
+      <option id="fill">Fill</option>
+      <option id="flaking">Flaking</option>
+      <option id="impasto">Impasto</option>
+      <option id="inpainting">Inpainting</option>
+      <option id="overpainting">Overpainting</option>
+      <option id="split">Split</option>
+      <option id="stretcherCrease">Stretcher crease</option>
+      <option id="tenting">Tenting</option>
+      <option id="warp">Warp</option>
+      <option id="wrinkling">Wrinkling</option>
+      <option id="drumming">Drumming</option>
+      <option id="fold">Fold</option>
+      <option id="foxing">Foxing</option>
+      <option id="ferrotyping">Ferrotyping</option>
+      <option id="frilling">Frilling</option>
+      <option id="dust">Dust</option>
+      <option id="grime">Grime</option>
+      <option id="smear">Smear</option>
+      <option id="fingerprint">Fingerprint</option>
+      <option id="spatter">Spatter</option>
+      <option id="run">Run</option>
+      <option id="hole">Hole</option>
+      <option id="fracture">Fracture</option>
+      <option id="fragment">Fragment</option>
+      <option id="spot">Spot</option>
+      <option id="clean">Clean</option>
+      <option id="cockling">Cockling</option>
+      <option id="yellowing">Yellowing</option>
+      <option id="fading">Fading</option>
+      <option id="bleaching">Bleaching</option>
+      <option id="darkening">Darkening</option>
+      <option id="worn">Worn</option>
+      <option id="stable">Stable</option>
+      <option id="unstable">Unstable</option>
+      <option id="rust">Rust</option>
+      <option id="broken">Broken</option>
+      <option id="dirty">Dirty</option>
+      <option id="pest">Pest</option>
+      <option id="intact">Intact</option>
+      <option id="paintLossMinor">Paint loss (minor)</option>
+      <option id="paintLossMajor">Paint loss (major)</option>
+      <option id="crackMinor">Crack (minor)</option>
+      <option id="crackMajor">Crack (major)</option>
+      <option id="deposit">Deposit</option>
+      <option id="crazing">Crazing</option>
+      <option id="unraveling">Unraveling</option>
+      <option id="dimpling">Dimpling</option>
+      <option id="bent">Bent</option>
+    </options>
+  </instance>
+
+  <instance id="vocab-conditionAssessmentPart">
+    <web-url>conditionAssessmentPart</web-url>
+    <title-ref>conditionAssessmentPart</title-ref>
+    <title>Condition Assessment Part</title>
+    <options>
+      <option id="damage">Damage</option>
+      <option id="clean">Clean</option>
+      <option id="surface">Surface</option>
+      <option id="material">Material</option>
+      <option id="structure">Structure</option>
+      <option id="parts">Parts</option>
+    </options>
+  </instance>
+
+  <instance id="vocab-valueType">
+    <web-url>valueType</web-url>
+    <title-ref>valueType</title-ref>
+    <title>Value Type</title>
+    <options>
+      <option id="appraisal">Appraisal</option>
+      <option id="insurance">Insurance</option>
+      <option id="loan">Loan</option>
+    </options>
+  </instance>
+
+  <instance id="vocab-acquisitionMethod">
+    <web-url>acquisitionMethod</web-url>
+    <title-ref>acquisitionMethod</title-ref>
+    <title>Acquisition Method</title>
+    <options>
+      <option id="exchange">Exchange</option>
+      <option id="gift">Gift</option>
+      <option id="purchase">Purchase</option>
+      <option id="transfer">Transfer</option>
+      <option id="partialGift">Partial Gift</option>
+      <option id="bequest">Bequest</option>
+      <option id="producedByStaff">Produced by Staff</option>
+      <option id="fieldCollection">Field Collection</option>
+      <option id="foundInCollection">Found in Collection</option>
+      <option id="collectedByStaff">Collected by Staff</option>
+      <option id="unknown">Unknown</option>
+    </options>
+  </instance>
+
+  <instance id="vocab-event">
+    <web-url>event</web-url>
+    <title-ref>event</title-ref>
+    <title>Event</title>
+    <options>
+      <option id="ADistantDrum">A Distant Drum</option>
+      <option id="AllIsMoreBeautiful">All Is More Beautiful</option>
+      <option id="AndTheBeadGoesOn">And The Bead Goes On!</option>
+      <option id="Apache">Apache!</option>
+      <option id="ArtifakesExhibition">Artifakes Exhibition</option>
+      <option id="Athapaskansexhibition">Athapaskans exhibition</option>
+      <option id="Baptismofbaby">Baptism of baby</option>
+      <option id="BathingBeautyContest">Bathing Beauty Contest</option>
+      <option id="BeadIt">Bead It!</option>
+      <option id="BeautyintheBeast">Beauty in the Beast</option>
+      <option id="CabrilloCelebrationof1892">Cabrillo Celebration of 1892</option>
+      <option id="CaliforniaPacificInternationalExpositionof1935">California Pacific International Exposition of 1935</option>
+      <option id="CollectorsChoice">Collector's Choice</option>
+      <option id="CrockerLandExpedition">Crocker Land Expedition</option>
+      <option id="DedicatoryServices">Dedicatory Services</option>
+      <option id="Dewlineexhibition">Dewline exhibition</option>
+      <option id="DocentPotluck">Docent Potluck</option>
+      <option id="EarlyMan">Early Man</option>
+      <option id="EgyptianTombexhibition">Egyptian Tomb exhibition</option>
+      <option id="FarabeesTheCentralCaribs">Farabee's "The Central Caribs"</option>
+      <option id="FlightoftheJaguar">Flight of the Jaguar</option>
+      <option id="FootstepsThroughTime">Footsteps Through Time</option>
+      <option id="FromtheRivertotheSeaSouthernCaliforniaIndians">From the River to the Sea: Southern California Indians</option>
+      <option id="FuneralofCinonDuro">Funeral of Cinon Duro</option>
+      <option id="GillensBaramaRiverCarbisofBritishGuiana">Gillen's "Barama River Carbis of British Guiana"</option>
+      <option id="GordosMexico">Gordo's Mexico</option>
+      <option id="GuatemalanTextilesandCostumesExhibit">Guatemalan Textiles and Costumes Exhibit</option>
+      <option id="HauntedMuseum">Haunted Museum</option>
+      <option id="HeritageinClay">Heritage in Clay</option>
+      <option id="HorsePower">Horse Power</option>
+      <option id="IndianFair">Indian Fair</option>
+      <option id="InterTribalIndianCeremonial">Inter-Tribal Indian Ceremonial</option>
+      <option id="IWeartheMorningStar">I Wear the Morning Star</option>
+      <option id="JapaneseWomanexhibition">Japanese Woman exhibition</option>
+      <option id="JemezPuebloChildrensArt">Jemez Pueblo Children's Art</option>
+      <option id="JubileeoftheVirgenofLaSoledad">Jubilee of the Virgen of La Soledad</option>
+      <option id="KleeWyckLecture">Klee Wyck Lecture</option>
+      <option id="LacandonMaya">Lacandon Maya</option>
+      <option id="LaFiestadelaMamaNegra">La Fiesta de la Mama Negra</option>
+      <option id="Laplandexhibition">Lapland exhibition</option>
+      <option id="LosingYourHeadOverSportstheAncientMexicanBallGame">Losing Your Head Over Sports: the Ancient Mexican Ball Game</option>
+      <option id="MadebyFrankMickabydirectionofHrdlickaforthePanamaCaliforniaExpositionof1915">Made by Frank Micka by direction of Hrdlicka for the Panama-California Exposition of 1915</option>
+      <option id="MadeforthePanamaCaliforniaExpositionof1915">Made for the Panama-California Exposition of 1915</option>
+      <option id="MadeinBelgiumforthePanamaCaliforniaExpositionof1915">Made in Belgium for the Panama-California Exposition of 1915</option>
+      <option id="MadeonexpeditionforthePanamaCaliforniaExpositionof1915">Made on expedition for the Panama-California Exposition of 1915</option>
+      <option id="MadeonexpeditionforthePanamaCaliforniaExpositionof1916">Made on expedition for the Panama-California Exposition of 1916</option>
+      <option id="MansMostViciousKillerHimself">Man's Most Vicious Killer, Himself</option>
+      <option id="ManandtheSea">Man and the Sea</option>
+      <option id="MapucheIndiansofChileexhibition">Mapuche Indians of Chile exhibition</option>
+      <option id="MatachineDance">Matachine Dance</option>
+      <option id="MedicalSuperstitions">Medical Superstitions</option>
+      <option id="Messengers">Messengers</option>
+      <option id="MessengersVoicesfromBeyond">Messengers: Voices from Beyond</option>
+      <option id="Metro">Metro</option>
+      <option id="MorningStarQuilts">Morning Star Quilts</option>
+      <option id="MummiesMayhemandMiseries">Mummies, Mayhem, and Miseries</option>
+      <option id="NavajoTradingPostsexhibition">Navajo Trading Posts exhibition</option>
+      <option id="NavyReliefCarnival">Navy Relief Carnival</option>
+      <option id="OlsensOntheTrailoftheArawak">Olsen's On the Trail of the Arawak</option>
+      <option id="PaipaiandSeriUtilitarianCrafts">Paipai and Seri Utilitarian Crafts</option>
+      <option id="PalmersNorthAmericanIndians">Palmer's North American Indians</option>
+      <option id="PanamaCaliforniaExhibitionNews">Panama California Exhibition News</option>
+      <option id="PanamaCaliforniaExpositionof1915">Panama-California Exposition of 1915</option>
+      <option id="PanamaPacificInternationalExpositionof1915SanFrancisco">Panama–Pacific International Exposition of 1915 (San Francisco)</option>
+      <option id="PanAmericanDay">Pan-American Day</option>
+      <option id="PhilippinesExhibition">Philippines Exhibition</option>
+      <option id="PortableContainers">Portable Containers</option>
+      <option id="ProjectPeru">Project Peru</option>
+      <option id="QuechuaWeavingQuillwork">Quechua Weaving Quillwork</option>
+      <option id="Ramapithecus">Ramapithecus</option>
+      <option id="RamonaTurkeyQueen">Ramona Turkey Queen</option>
+      <option id="Regattas">Regattas</option>
+      <option id="RockArtImages">Rock Art Images</option>
+      <option id="RomanticRussiaFantasiesinLacquer">Romantic Russia: Fantasies in Lacquer</option>
+      <option id="Roundup">Roundup</option>
+      <option id="SanDiegoCountyFair">San Diego County Fair</option>
+      <option id="SanDiegoMuseumofManChildrensSummerProgram">San Diego Museum of Man Children's Summer Program</option>
+      <option id="ShamansandSpirits">Shamans and Spirits</option>
+      <option id="Shelters">Shelters</option>
+      <option id="SirFrancisDraketheFamousVoyage">Sir Francis Drake: the Famous Voyage</option>
+      <option id="SouthAfricanTribalLife">South African Tribal Life</option>
+      <option id="SouthwestColloquium">Southwest Colloquium</option>
+      <option id="SouthwestIndianArtsColloquium">Southwest Indian Arts Colloquium</option>
+      <option id="SpiritWorld">Spirit World</option>
+      <option id="Stitchery">Stitchery</option>
+      <option id="StitchesInTime">Stitches In Time</option>
+      <option id="SummerSnakeCeremony">Summer Snake Ceremony</option>
+      <option id="SuntanContest">Suntan Contest</option>
+      <option id="SWAIASantaFeIndianMarket">SWAIA - Santa Fe Indian Market</option>
+      <option id="TensionandHarmonyexhibit">Tension and Harmony exhibit</option>
+      <option id="TheArtifactPiece">The Artifact Piece</option>
+      <option id="TijuanaMexicanMarketplace">Tijuana-Mexican Marketplace</option>
+      <option id="TlingitFaces">Tlingit Faces</option>
+      <option id="TraditionalCraftsofSaudiArabia">Traditional Crafts of Saudi Arabia</option>
+      <option id="TreasuresoftheEarthSeaandSky">Treasures of the Earth, Sea, and Sky</option>
+      <option id="TukanoManiokHarvest">Tukano Maniok Harvest</option>
+      <option id="USCPotteryWorkshop">USC Pottery Workshop</option>
+      <option id="Vestidos">Vestidos</option>
+      <option id="WindintheBuffaloGrasswithTetonSiouxBusts">Wind in the Buffalo Grass (with Teton Sioux Busts)</option>
+      <option id="Wings">Wings</option>
+      <option id="WinterOlympics">Winter Olympics</option>
+      <option id="WonderofLife">Wonder of Life</option>
+      <option id="YearoftheHopi">Year of the Hopi</option>
+      <option id="YerDailegeMolas">Yer Dailege: Molas</option>
+      <option id="ZuluWars">Zulu Wars</option>
+    </options>
+  </instance>
+
+  <instance id="vocab-measuredPart">
+    <web-url>measuredPart</web-url>
+    <title-ref>measuredPart</title-ref>
+    <title>Measured Part</title>
+    <options>
+      <option id="base">base</option>
+      <option id="frame">frame</option>
+      <option id="framed">framed</option>
+      <option id="filmSize">film size</option>
+      <option id="printSize">print size</option>
+      <option id="imageSize">image size</option>
+      <option id="mount">mount</option>
+      <option id="paperSize">paper size</option>
+      <option id="plateSize">plate size</option>
+      <option id="unframed">unframed</option>
+      <option id="whole">whole</option>
+      <option id="part">part</option>
+    </options>
+  </instance>
+
+  <instance id="vocab-dimension">
+    <web-url>dimension</web-url>
+    <title-ref>dimension</title-ref>
+    <title>Dimension</title>
+    <options>
+      <option id="area">area</option>
+      <option id="base">base</option>
+      <option id="circumference">circumference</option>
+      <option id="count">count</option>
+      <option id="depth">depth</option>
+      <option id="diameter">diameter</option>
+      <option id="height">height</option>
+      <option id="length">length</option>
+      <option id="runningTime">running time</option>
+      <option id="target">target</option>
+      <option id="volume">volume</option>
+      <option id="weight">weight</option>
+      <option id="width">width</option>
+    </options>
+  </instance>
+
+  <instance id="vocab-measurementUnit">
+    <web-url>measurementUnit</web-url>
+    <title-ref>measurementUnit</title-ref>
+    <title>Measurement Unit</title>
+    <options>
+      <option id="carats">carats</option>
+      <option id="centimeters">centimeters</option>
+      <option id="cubicCentimeters">cubic centimeters</option>
+      <option id="feet">feet</option>
+      <option id="inches">inches</option>
+      <option id="kilograms">kilograms</option>
+      <option id="liters">liters</option>
+      <option id="millimeters">millimeters</option>
+      <option id="meters">meters</option>
+      <option id="minutes">minutes</option>
+      <option id="pixels">pixels</option>
+      <option id="squareFeet">square feet</option>
+      <option id="stories">stories</option>
+    </options>
+  </instance>
+
+  <instance id="vocab-technicalAttribute">
+    <web-url>technicalAttribute</web-url>
+    <title-ref>technicalAttribute</title-ref>
+    <title>Technical Attribute</title>
+    <options>
+      <option id="audioTape">Audio Tape</option>
+      <option id="digital">Digital</option>
+      <option id="glassPlateNegative">Glass Plate Negative</option>
+      <option id="glassPlatePositive">Glass Plate Positive</option>
+      <option id="magneticTapeType">Magnetic Tape Type</option>
+      <option id="mountedSlide">Mounted Slide</option>
+      <option id="photographicFilm">Photographic Film</option>
+      <option id="photographicPrint">Photographic Print</option>
+      <option id="postcard">Postcard</option>
+      <option id="realPhotoPostcard">Real-photo Postcard</option>
+      <option id="recordSpeed">Record Speed</option>
+      <option id="videoTape">Video Tape</option>
+      <option id="advertisement">Advertisement</option>
+      <option id="anscochromeFilm">Anscochrome Film</option>
+      <option id="blackWhiteFilm">Black &amp; White Film</option>
+      <option id="blackWhiteSlide">Black &amp; White Slide</option>
+      <option id="cardPhotograph">Card Photograph</option>
+      <option id="clipping">Clipping</option>
+      <option id="colorFilm">Color Film</option>
+      <option id="colorSlide">Color Slide</option>
+      <option id="drawing">Drawing</option>
+      <option id="lanternSlide">Lantern Slide</option>
+      <option id="letter">Letter</option>
+      <option id="lithograph">Lithograph</option>
+      <option id="paper">Paper</option>
+      <option id="print">Print</option>
+    </options>
+  </instance>
+
+  <instance id="vocab-processTechnique">
+    <web-url>processTechnique</web-url>
+    <title-ref>processTechnique</title-ref>
+    <title>Process/Technique</title>
+    <options>
+      <option id="acetate">acetate</option>
+      <option id="ambrotype">ambrotype</option>
+      <option id="albumenPrint">albumen print</option>
+      <option id="cyanotype">cyanotype</option>
+      <option id="daggerotype">daggerotype</option>
+      <option id="negative">negative</option>
+      <option id="nitrateNegative">nitrate negative</option>
+      <option id="photogravure">photogravure</option>
+      <option id="png">png</option>
+      <option id="tiff">tiff</option>
+      <option id="jpg">jpg</option>
+      <option id="pdf">pdf</option>
+    </options>
+  </instance>
+  <instance id="vocab-filmFormat">
+    <web-url>filmFormat</web-url>
+    <title-ref>filmFormat</title-ref>
+    <title>Film Format</title>
+    <options>
+      <option id="16mm">16mm</option>
+      <option id="35mmUnperforated">35mm unperforated</option>
+      <option id="35mmPerforated">35mm perforated</option>
+      <option id="35mm">35mm</option>
+    </options>
+  </instance>
+
+  <instance id="vocab-origCopy">
+    <web-url>origCopy</web-url>
+    <title-ref>origCopy</title-ref>
+    <title>Original/Copy</title>
+    <options>
+      <option id="original">Original</option>
+      <option id="copy">Copy</option>
+    </options>
+  </instance>
+
+  <instance id="vocab-color">
+    <web-url>color</web-url>
+    <title-ref>color</title-ref>
+    <title>Color</title>
+    <options>
+      <option id="color">color</option>
+      <option id="grayscale">grayscale</option>
+      <option id="sepia">sepia</option>
+      <option id="blueTone">blue tone</option>
+      <option id="redTone">red tone</option>
+      <option id="greenTone">green tone</option>
+    </options>
+  </instance>
+
+  <instance id="vocab-mediaType">
+    <web-url>mediaType</web-url>
+    <title-ref>mediaType</title-ref>
+    <title>Media Type</title>
+    <options>
+      <option id="artifact">Artifact</option>
+      <option id="dataset">Dataset</option>
+      <option id="document">Document</option>
+      <option id="film">Film</option>
+      <option id="movingImage">Moving Image</option>
+      <option id="negative">Negative</option>
+      <option id="printPhotographic">Print-Photographic</option>
+      <option id="slide">Slide</option>
+      <option id="sound">Sound</option>
+      <option id="other">Other</option>
+    </options>
+  </instance>
+</instances>

@@ -1,0 +1,43 @@
+{
+    "csid": "2007.4-a",
+    "fields": {
+        "entryMethods": [
+            {
+                "entryMethod": "in-person",
+                "_primary": false 
+            },
+            {
+                "entryMethod": "post",
+                "_primary": true 
+            } 
+        ],
+        "returnDate": "",
+        "currentOwner": "urn:cspace:org.collectionspace.demo:organizationauthority:name(TestOrgAuth):organization:name(Bloggs & Co.)'Bloggs & Co.'",
+        "depositor": "Christoph Grissemann",
+        "responsibleEntity": "Jorg Kalt",
+        "packingNote": "Herring are in a glass tray, with a saran wrap cover",
+        "entryNumber": "2007.4-a",
+        "entryNote": "",
+        "numObjects": "37",
+        "description": "Pickled herring from \"Immer nie am Meer\"",
+        "entryDate": "",
+        "donor": "Antonin Svoboda" 
+    },
+    "termsUsed": [
+        {
+            "csid": "987.654.321",
+            "number": "Bloggs & Co.",
+            "sourceFieldName": "currentOwner",
+            "recordtype": "organization" 
+        },
+        {
+            "csid": "123.456.789",
+            "number": "Christoph Grissemann",
+            "sourceFieldName": "depositor",
+            "recordtype": "person" 
+        } 
+    ],
+    "relations": {
+        
+    }
+}

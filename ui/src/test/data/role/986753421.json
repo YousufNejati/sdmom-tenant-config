@@ -1,0 +1,14 @@
+{
+    "csid": "986753421",
+    "fields": {
+        "permissions": [
+            {"resourceName": "loanin", "permission": "none"},
+            {"resourceName": "loanout", "permission": "none"},
+            {"resourceName": "cataloging", "permission": "read"},
+            {"resourceName": "intake", "permission": "read"},
+            {"resourceName": "movement", "permission": "read"}
+        ],
+        "displayName": "Director",
+        "description": "The big boss"
+    }
+}

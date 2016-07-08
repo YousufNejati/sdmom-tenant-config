@@ -1,0 +1,39 @@
+
+<record id="hierarchy" in-recordlist="no">
+    <section id="hierarchyInformation">
+        <field id="broaderContextType">
+            <options>
+                <option id="set">Set</option>
+                <option id="album">Album</option>
+                <option id="collection">Collection</option>
+                <option id="component">Component</option>
+                <option id="folder">Folder</option>
+                <option id="item">Item</option>
+                <option id="group">Group</option>
+                <option id="multiples">Multiples</option>
+                <option id="series">Series</option>
+                <option id="subgroup">Subgroup</option>
+                <option id="subseries">Subseries</option>
+                <option id="volume">Volume</option>
+            </options>
+        </field>
+        <repeat id="narrowerContexts">
+            <field id="narrowerContextType">
+                <options>
+                    <option id="set">Item in a set</option>
+                    <option id="album">Album</option>
+                    <option id="collection">Collection</option>
+                    <option id="component">Component</option>
+                    <option id="folder">Folder</option>
+                    <option id="item">Item</option>
+                    <option id="group">Group</option>
+                    <option id="multiples">Multiples</option>
+                    <option id="series">Series</option>
+                    <option id="subgroup">Subgroup</option>
+                    <option id="subseries">Subseries</option>
+                    <option id="volume">Volume</option>
+                </options>
+            </field>
+        </repeat>
+    </section>
+</record>

@@ -1,0 +1,21 @@
+<record id="media" is-extension="true">
+
+  <services-record-path id="sdmom">media_sdmom:http://collectionspace.org/services/media/local/sdmom,media_sdmom</services-record-path>
+
+  <section id="mediaInformation">
+    <!-- convert from text field to authority -->
+    <repeat id="subjects">
+      <services-tag>subjectList</services-tag>
+      <field id="subject" ui-search="repeatable" autocomplete="concept-concept"></field>
+    </repeat>
+
+    <repeat id="types">
+      <field id="type" ui-search="repeatable" autocomplete="vocab-mediaType" ui-type="enum"></field>
+    </repeat>
+
+    <field id="dateCreated" ui-type="date" datatype="date" ui-search="range" section="sdmom" />
+    <field id="dateModified" ui-type="date" datatype="date" ui-search="range" section="sdmom" />
+    <field id="hiresLocation" section="sdmom" />
+  </section>
+
+</record>

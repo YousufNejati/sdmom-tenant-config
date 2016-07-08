@@ -1,0 +1,183 @@
+{
+    "csid": "IN2009.003",
+    "fields": {
+        "entryNumber": "IN2009.003",
+        "entryDate": "Mar 1, 2009",
+        "entryMethods": [
+            {
+                "entryMethod": "inperson",
+                "_primary": false 
+            },
+            {
+                "entryMethod": "post",
+                "_primary": true 
+            }
+        ],
+        "entryReason": "loan",
+        "returnDate": "Jun 12, 2010",
+        "currentOwner": "me me me!",
+        "depositor": "yes, please",
+        "depositorsRequirements": "Nothing",
+        "entryNote": "please enter this without using vowels",
+        "packingNote": "please pack this upsidedown and insideout",
+        "associationDate": "1 + 1 = 3?",
+        "earliestDate": "",
+        "earliestDateCertainty": "maybe",
+        "earliestDateQualifier": "yes!",
+        "latestDate": "",
+        "latestDateCertainty": "probably",
+        "latestDateQualifier": "no!",
+        "datePeriod": "all around the universe",
+        "dateText": "test test test",
+        "fieldCollectionNote": "sturdy shovels are a necessity!",
+        "fieldCollectionNumber": "111222333444555666",
+        "fieldCollectors": [
+            {
+                "fieldCollector": "Dr Livingston",
+                "_primary": false 
+            },
+            {
+                "fieldCollector": "Henry Morton Stanley",
+                "_primary": true 
+            }
+        ],
+        "fieldCollectionDate": "Jan 12, 1869",
+        "fieldCollectionSources": [
+            {
+                "fieldCollectionSource": "hmmm?",
+                "_primary": true 
+            }
+        ],
+        "fieldCollectionMethods": [
+            {
+                "fieldCollectionMethod": "exchanged",
+                "_primary": false 
+            },
+            {
+                "fieldCollectionMethod": "commissioned",
+                "_primary": true 
+            }
+        ],
+        "fieldCollectionEventName": "Bujumbura",
+        "fieldCollectionPlace": "Upper Bujumbura",
+        "geologicalComplexName": "South Pole",
+        "habitat": "warm and snug",
+        "habitatNote": "no cookies in bed",
+        "stratigraphicUnitName": "test",
+        "stratigraphicUnitType": "yes",
+        "stratigraphicUnitNote": "okay",
+        "valuationReferenceNumber": "444555666",
+        "valuer": "Charlie Chaplin",
+        "insuranceNote": "please",
+        "insurancePolicyNumber": "555666777",
+        "insuranceReferenceNumber": "00101010101",
+        "insuranceRenewalDate": "Jan 1, 1900",
+        "insurers": [
+            {
+                "insurer": "Carl Goodman",
+                "_primary": true 
+            }
+        ],
+        "currentLocationGroup": [
+            {
+                "_primary": true,
+                "currentLocationFitness": "dangerous",
+                "currentLocation": "downstairs",
+                "currentLocationNote": "in a darkly-lit place"
+            },
+            {
+                "currentLocationFitness": "perfect",
+                "currentLocation": "upstairs",
+                "currentLocationNote": "do not look at or breathe on"
+            }
+        ],
+        "locationDate": "Jan 1, 1900",
+        "normalLocation": "foot rest",
+        "conditionCheckDate": "Jan 1, 1922",
+        "conditionCheckMethods": [
+            {
+                "conditionCheckMethod": "x-rayed",
+                "_primary": false 
+            },
+            {
+                "conditionCheckMethod": "observed",
+                "_primary": true 
+            }
+        ],
+        "conditionCheckNote": "it looks ok",
+        "conditionCheckReasons": [
+            {
+                "conditionCheckReason": "enquiry",
+                "_primary": false 
+            },
+            {
+                "conditionCheckReason": "conservation",
+                "_primary": true 
+            },
+            {
+                "conditionCheckReason": "consideration",
+                "_primary": false 
+            }
+        ],
+        "conditionCheckReferenceNumber": "1122233344",
+        "conditionCheckersOrAssessors": [
+            {
+                "conditionCheckerOrAssessor": "all of them",
+                "_primary": true 
+            }
+        ] 
+    },
+    "relations": {
+        
+    },
+    "termsUsed": [
+        {
+            "csid": "123.456.789",
+            "number": "yes, please",
+            "sourceFieldName": "depositor",
+            "recordtype": "person" 
+        },
+        {
+            "csid": "987.654.321",
+            "number": "me me me!",
+            "sourceFieldName": "owner",
+            "recordtype": "organization" 
+        } ,
+        {
+            "csid": "123.456.789",
+            "number": "hmmm?",
+            "sourceFieldName": "fieldCollectionsSource",
+            "recordtype": "person" 
+        },
+        {
+            "csid": "987.654.321",
+            "number": "Dr Livingston",
+            "sourceFieldName": "fieldCollector",
+            "recordtype": "organization" 
+        },
+        {
+            "csid": "123.456.789",
+            "number": "Henry Mornton Stanley",
+            "sourceFieldName": "fieldCollector",
+            "recordtype": "person" 
+        },
+        {
+            "csid": "123.456.789",
+            "number": "Carl Goodman",
+            "sourceFieldName": "insurer",
+            "recordtype": "person" 
+        },
+        {
+            "csid": "123.456.789",
+            "number": "Charlie Chapman",
+            "sourceFieldName": "valuer",
+            "recordtype": "person" 
+        },
+        {
+            "csid": "123.456.789",
+            "number": "all of them",
+            "sourceFieldName": "conditionCheckerOrAssessor",
+            "recordtype": "person" 
+        }
+    ]
+}

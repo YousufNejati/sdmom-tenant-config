@@ -1,0 +1,14 @@
+{
+    "csid": "784951623",
+    "fields": {
+        "permissions": [
+            {"resourceName": "loanin", "permission": "delete"},
+            {"resourceName": "loanout", "permission": "none"},
+            {"resourceName": "cataloging", "permission": "read"},
+            {"resourceName": "intake", "permission": "write"},
+            {"resourceName": "movement", "permission": "delete"}
+        ],
+        "displayName": "Scanning Intern",
+        "description": "Interns responsible for scanning documents"
+    }
+}

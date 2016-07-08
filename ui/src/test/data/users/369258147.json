@@ -1,0 +1,15 @@
+{
+    "csid": "369258147",
+    "fields": {
+        "userId": "megan",
+        "screenName": "Megan Forbes",
+        "password": "testpassword",
+        "email": "megan.forbes@collectionspace.org",
+        "status": "active",
+        "role": [{
+            "roleId": "a9bf8595-ffc6-40b6-9d86-d4dc8ff7e62e",
+            "roleName": "ROLE_TENANT_READER",
+            "roleSelected": true
+        }]
+    }
+}

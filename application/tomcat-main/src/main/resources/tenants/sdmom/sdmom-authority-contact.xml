@@ -1,0 +1,10 @@
+<record id="contact" in-recordlist="no" type="authority,compute-displayname" cms-type="default"
+    generate-services-schema="true" generate-if-authority="false">
+
+    <section id="contactInformation">
+      <repeat id="telephoneNumberGroupList/telephoneNumberGroup">
+        <!-- convert to dynamic controlled list -->
+        <field id="telephoneNumberType" ui-search="repeatable" autocomplete="vocab-telephoneNumberType" ui-type="enum" />
+      </repeat>
+    </section>
+</record>

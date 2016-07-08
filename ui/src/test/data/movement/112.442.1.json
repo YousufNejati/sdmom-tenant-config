@@ -1,0 +1,70 @@
+{
+    "csid": "112.442.1",
+    "fields": {
+        "currentLocation": "Front Porch",
+        "currentLocationFitness": "unsuitable",
+        "currentLocationNote": "not covered",
+        "locationDate": "March 26, 2010",
+        "normalLocation": "Back Porch",
+        "movementContact": "urn:cspace:org.collectionspace.demo:personauthority:name(TestPersonAuth):person:name(The Big Lebowsky)'The Big Lebowsky'",
+        "movementMethods": [
+            {
+                "_primary": false,
+                "movementMethod": "forklift" 
+            },
+            {
+                "_primary": true,
+                "movementMethod": "trolley" 
+            }
+        ],
+        "movementNote": "Sample movement note",
+        "movementReferenceNumber": "211.442.1",
+        "plannedRemovalDate": "May 26, 2010",
+        "removalDate": "May 25, 2010",
+        "reasonForMove": "photography" 
+    },
+    "termsUsed": [
+        {
+            "csid": "123.456.789",
+            "number": "The Big Lebowsky",
+            "sourceFieldName": "movementContact",
+            "recordtype": "person" 
+        }
+    ],
+    "relations": {
+        "cataloging": [
+            {
+                "summary": "This record has at least one related record of each type that there's a tab active for",
+                "csid": "1984.068.0335b",
+                "number": "1984.068.0335b",
+                "relid": "19ba9f30-75c3-41c8-abcd",
+                "relationshiptype": "affects",
+                "recordtype": "cataloging"
+            }
+        ],
+        "movement": [
+            {
+                "summary": "Back Porch",
+                "csid": "221.244.9",
+                "number": "221.244.9",
+                "relid": "19ba9f30-75c3-abcd-abcd",
+                "relationshiptype": "affects",
+                "recordtype": "movement",
+                "workflow": "locked"
+            }
+        ],
+        "media": [
+            {
+                "summary": "Sample File, July 3, 2011",
+                "csid": "123456789",
+                "number": "MH2011.3",
+                "relid": "19ba9f30-75c3-abcd-abcd",
+                "relationshiptype": "affects",
+                "recordtype": "media",
+                "summarylist": {
+                    "imgThumb": "../../../../test/data/images/Thumbnail.jpeg"
+                }
+            }
+        ]
+    }
+}

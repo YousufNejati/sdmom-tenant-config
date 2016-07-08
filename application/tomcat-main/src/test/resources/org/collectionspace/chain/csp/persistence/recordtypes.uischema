@@ -1,0 +1,66 @@
+{
+  "recordtypes": {
+    "properties": {
+      "administration": {
+        "default": [
+          "role", 
+          "termlist", 
+          "users"
+        ], 
+        "type": "array"
+      }, 
+      "all": {
+        "default": [
+          "all"
+        ], 
+        "type": "array"
+      }, 
+      "cataloging": {
+        "default": [
+          "cataloging"
+        ], 
+        "type": "array"
+      }, 
+      "procedures": {
+        "default": [
+          "acquisition", 
+          "group", 
+          "intake", 
+          "loanin", 
+          "loanout", 
+          "media", 
+          "movement", 
+          "objectexit",
+          "conditioncheck",
+          "conservation",
+          "exhibition",
+          "valuationcontrol"
+        ], 
+        "type": "array"
+      }, 
+      "vocabularies": {
+        "default": [
+          "activity", 
+          "citation", 
+          "common_ta",
+          "cona_work",
+          "concept", 
+          "location", 
+          "material_ca", 
+          "offsite_sla", 
+          "organization", 
+          "person", 
+          "place", 
+          "taxon", 
+          "tgn_place", 
+          "ulan_oa", 
+          "ulan_pa",
+          "worldcat",
+          "work"
+        ], 
+        "type": "array"
+      }
+    }, 
+    "type": "object"
+  }
+}

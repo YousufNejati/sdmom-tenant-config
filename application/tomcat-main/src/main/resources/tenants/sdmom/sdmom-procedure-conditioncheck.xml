@@ -1,0 +1,60 @@
+<record id="conditioncheck" is-extension="true" type="record,procedure" generate-services-schema="true">
+
+  <services-record-path id="sdmom">conditionchecks_sdmom:http://collectionspace.org/services/conditioncheck/local/sdmom,conditionchecks_sdmom</services-record-path>
+
+  <section id="objectConditionInformation">
+    <repeat id="conditionStatusList/conditionStatusGroup" section="sdmom">
+      <field id="status" autocomplete="vocab-conditionStatus" ui-type="enum" section="sdmom" />
+      <field id="statusDate" ui-type="date" datatype="date" section="sdmom" />
+      <field id="statusNote" section="sdmom" />
+    </repeat>
+
+    <field id="cond" ui-search="repeatable" autocomplete="vocab-conditionCondition" ui-type="enum" mini="summary,search,list,relate" section="sdmom" />
+    <field id="condDate" ui-type="date" datatype="date" section="sdmom" />
+    <field id="condNote" section="sdmom" />
+
+    <!-- Converting 'condition' field to Dynamic -->
+    <repeat id="conditionCheckGroupList/conditionCheckGroup">
+      <field id="condition" ui-search="repeatable" mini="summary,search,list,relate" autocomplete="vocab-condition" ui-type="enum"></field>
+    </repeat>
+
+    <!-- Converting 'conservationTreatmentPriority' field to Dynamic -->
+    <field id="conservationTreatmentPriority" ui-search="repeatable" autocomplete="vocab-conservationTreatmentPriority" ui-type="enum" />
+
+    <field id="workAssessmentCompletedBy" ui-search="repeatable" autocomplete="person-person,organization-organization" section="sdmom" />
+    <field id="estimatedTreatmentCost" section="sdmom" />
+    <field id="estimatedCompletionDate" ui-type="date" datatype="date" section="sdmom" />
+
+    <repeat id="workCompletedList/workCompletedGroup" section="sdmom">
+      <field id="workCompletedBy" ui-search="repeatable" autocomplete="person-person,organization-organization" section="sdmom" />
+      <field id="workCompleted" section="sdmom" />
+      <field id="workCompletedDate" ui-type="date" datatype="date" section="sdmom" />
+    </repeat>
+
+    <repeat id="hazardGroupList/hazardGroup">
+      <!-- Converting 'hazard' field to Dynamic -->
+      <field id="hazard" ui-search="repeatable" mini="search,list,relate" autocomplete="vocab-hazard" ui-type="enum">
+        <selector>conditioncheck-hazard</selector>
+      </field>
+      <field id="hazardDate" ui-type="date" datatype="date"></field>
+      <field id="hazardNote"></field>
+    </repeat>
+  </section>
+
+  <section id="conditionCheckInformation">
+    <!-- Converting 'conditionCheckReason' field to Dynamic -->
+    <field id="conditionCheckReason" ui-search="repeatable" mini="search,list,relate" autocomplete="vocab-conditioncheckreason" ui-type="enum" />
+
+    <repeat id="conditionAssessmentList/conditionAssessmentGroup" section="sdmom">
+      <field id="conditionAssessmentTerm" autocomplete="vocab-conditionAssessmentTerm" ui-type="enum" section="sdmom" />
+      <field id="conditionAssessmentPart" autocomplete="vocab-conditionAssessmentPart" ui-type="enum" section="sdmom" />
+      <field id="conditionAssessmentComment" section="sdmom" />
+    </repeat>
+
+    <repeat id="conditionChkers" has-primary="yes" section="sdmom">
+      <field id="conditionChker" ui-search="repeatable" autocomplete="person-person,organization-organization" section="sdmom" />
+    </repeat>
+
+  </section>
+
+</record>

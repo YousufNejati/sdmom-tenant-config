@@ -1,0 +1,34 @@
+<record id="place">
+
+  <instances id="place">
+      <!-- Copied from base -->
+      <instance id="place-place">
+          <web-url>place</web-url>
+          <title-ref>place</title-ref>
+          <title>Local Places</title>
+      </instance>
+      <!-- <instance id="place-tgn_place">
+          <web-url>tgn_place</web-url>
+          <title-ref>tgn_place</title-ref>
+          <title>TGN</title>
+      </instance> -->
+
+      <!-- Added new -->
+      <instance id="place-bgn_place">
+          <web-url>bgn_place</web-url>
+          <title-ref>bgn_place</title-ref>
+          <title>U.S. Board on Geographic Names</title>
+      </instance>
+      <instance id="place-nga_place">
+          <web-url>nga_place</web-url>
+          <title-ref>nga_place</title-ref>
+          <title>U.S. National Geospatial-Intelligence Agency</title>
+      </instance>
+      <instance id="place-site_place">
+          <web-url>site_place</web-url>
+          <title-ref>site_place</title-ref>
+          <title>Sites</title>
+      </instance>
+  </instances>
+
+</record>
